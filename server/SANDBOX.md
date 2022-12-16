@@ -16,18 +16,18 @@
 
 `npx sequelize-cli model:generate --name Benefits --attributes productID:integer,title:array,description:array`
 
-### Side-Effect
+### Side-Effects
 
 `npx sequelize-cli model:generate --name SideEffects --attributes productID:integer,title:array`
 
-### Nutrion-Details
+### Nutrion-Detail
 
 `npx sequelize-cli model:generate --name NutrionDetail --attributes details:array`
 
 ## Seed
 
 `npx sequelize-cli seed:generate --name user`
-`npx sequelize-cli seed:generate --name profile`
 `npx sequelize-cli seed:generate --name product`
-`npx sequelize-cli seed:generate --name about`
-`npx sequelize-cli seed:generate --name wishlist`
+`npx sequelize-cli seed:generate --name benefits`
+`npx sequelize-cli seed:generate --name sideEffects`
+`npx sequelize-cli seed:generate --name nutritionDetail`
