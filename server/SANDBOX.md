@@ -10,11 +10,19 @@
 
 ### Products
 
-`npx sequelize-cli model:generate --name Product --attributes title:string,latinName:string,origins:string,pictures:string`
+`npx sequelize-cli model:generate --name Product --attributes title:string,latinName:string,origins:string,family:array,pictures:string,description:string`
 
-### Details
+### Benefits
 
-`npx sequelize-cli model:generate --name Detail --attributes description:string,benefits:string,sideEffects:string,productID:integer`
+`npx sequelize-cli model:generate --name Benefits --attributes productID:integer,title:array,description:array`
+
+### Side-Effect
+
+`npx sequelize-cli model:generate --name SideEffects --attributes productID:integer,title:array`
+
+### Nutrion-Details
+
+`npx sequelize-cli model:generate --name NutrionDetail --attributes details:array`
 
 ## Seed
 

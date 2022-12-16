@@ -12,6 +12,12 @@ module.exports = (sequelize, DataTypes) => {
             Product.belongsTo(models.Benefits, {
                 foreignKey: "productID",
             });
+            Product.belongsTo(models.SideEffects, {
+                foreignKey: "productID",
+            });
+            Product.belongsTo(models.NutrionDetails, {
+                foreignKey: "productID",
+            });
         }
     }
     Product.init(
