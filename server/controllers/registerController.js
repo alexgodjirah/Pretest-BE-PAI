@@ -7,18 +7,20 @@ class RegisterController {
 
         try {
             // Username Checker
-            const checkUsername = await User.findOne({
+            const isUsernameAvailable = await User.findOne({
                 where: { username: username },
             });
-            if (checkUsername) {
+            if (isUsernameAvailable) {
                 return res
                     .status(400)
                     .json({ message: "Username is already taken" });
             }
 
             // Email Cheker
-            const checkEmail = await User.findOne({ where: { email: email } });
-            if (checkEmail) {
+            const isEmailAvailable = await User.findOne({
+                where: { email: email },
+            });
+            if (isEmailAvailable) {
                 return res
                     .status(400)
                     .json({ message: "Email is already taken" });
@@ -33,7 +35,7 @@ class RegisterController {
             };
             const createUser = await User.create(payloadUser);
             if (createUser) {
-                return res.status(200).json({
+                return res.status(201).json({
                     message: "Congrats, user is created!!",
                     username: createUser.username,
                     email: createUser.email,
