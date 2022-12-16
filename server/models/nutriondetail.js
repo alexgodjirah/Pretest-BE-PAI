@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
     }
     NutrionDetail.init(
         {
-            details: DataTypes.ARRAY,
+            details: DataTypes.ARRAY(DataTypes.STRING),
         },
         {
             sequelize,

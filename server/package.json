@@ -6,6 +6,7 @@
     "scripts": {
         "start": "nodemon index.js",
         "create-db": "npx sequelize db:create",
+        "drop-db": "npx sequelize db:drop",
         "migrate-db": "npx sequelize db:migrate",
         "unmigrate-db": "npx sequelize db:migrate:undo:all",
         "seed-db": "npx sequelize db:seed:all",

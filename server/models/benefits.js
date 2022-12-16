@@ -17,8 +17,8 @@ module.exports = (sequelize, DataTypes) => {
     Benefits.init(
         {
             productID: DataTypes.INTEGER,
-            title: DataTypes.ARRAY,
-            description: DataTypes.ARRAY,
+            title: DataTypes.ARRAY(DataTypes.STRING),
+            description: DataTypes.ARRAY(DataTypes.STRING),
         },
         {
             sequelize,

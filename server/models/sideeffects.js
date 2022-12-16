@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
     SideEffects.init(
         {
             productID: DataTypes.INTEGER,
-            title: DataTypes.ARRAY,
+            title: DataTypes.ARRAY(DataTypes.STRING),
         },
         {
             sequelize,

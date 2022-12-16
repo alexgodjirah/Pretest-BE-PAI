@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
             Product.belongsTo(models.SideEffects, {
                 foreignKey: "productID",
             });
-            Product.belongsTo(models.NutrionDetails, {
+            Product.belongsTo(models.NutrionDetail, {
                 foreignKey: "productID",
             });
         }
@@ -25,8 +25,8 @@ module.exports = (sequelize, DataTypes) => {
             title: DataTypes.STRING,
             latinName: DataTypes.STRING,
             origins: DataTypes.STRING,
-            family: DataTypes.ARRAY,
-            pictures: DataTypes.ARRAY,
+            family: DataTypes.ARRAY(DataTypes.STRING),
+            pictures: DataTypes.ARRAY(DataTypes.STRING),
             description: DataTypes.STRING,
         },
         {

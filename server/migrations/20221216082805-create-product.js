@@ -22,11 +22,11 @@ module.exports = {
                 allowNull: false,
             },
             family: {
-                type: Sequelize.ARRAY,
+                type: Sequelize.ARRAY(Sequelize.STRING),
                 allowNull: true,
             },
             pictures: {
-                type: Sequelize.ARRAY,
+                type: Sequelize.ARRAY(Sequelize.STRING),
                 allowNull: true,
             },
             description: {
