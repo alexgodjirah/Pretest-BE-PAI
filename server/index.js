@@ -4,6 +4,7 @@ require("dotenv").config();
 // Express and App Installation
 const express = require("express");
 const App = express();
+const routes = require("./routes");
 
 // Dependencies Installation
 const cors = require("cors");
@@ -16,10 +17,7 @@ App.use(express.urlencoded({ extended: true }));
 App.use(express.json());
 App.use(cors());
 App.use(cookieParser());
-
-App.get("/", (req, res) => {
-    res.send("hello world");
-});
+App.use("/", routes);
 
 App.listen(PORT, () => {
     console.log(`Listening on PORT: http://localhost:${PORT}`);
