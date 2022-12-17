@@ -29,6 +29,7 @@ class ProductController {
         const { role } = req.user;
 
         try {
+            // Authorization
             if (role !== "admin") {
                 return res.status(401).json({
                     message: "Only Admin is authorized to enter this page!!",
@@ -52,7 +53,55 @@ class ProductController {
                     "latin name": createProduct.latinName,
                     origins: createProduct.origins,
                     family: createProduct.family,
+                    pictures: createProduct.pictures,
                     description: createProduct.description,
+                });
+            } else {
+                return res.status(400).json({ message: "Bad Request." });
+            }
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({ message: error.message });
+        }
+    };
+
+    // Update Product
+    static updateProduct = async (req, res) => {
+        const { id } = req.params;
+        const { title, latinName, origins, family, pictures, description } =
+            req.body;
+
+        const { role } = req.user;
+
+        try {
+            // Authorization
+            if (role !== "admin") {
+                return res.status(401).json({
+                    message: "Only Admin is authorized to enter this page!!",
+                });
+            }
+
+            const payloadProduct = {
+                title,
+                latinName,
+                origins,
+                family,
+                pictures,
+                description,
+            };
+
+            const updateProduct = await Product.update(payloadProduct, {
+                where: { id: id },
+            });
+            if (updateProduct) {
+                return res.status(200).json({
+                    message: "Congrats!! Product is updated.",
+                    title: updateProduct.title,
+                    "latin name": updateProduct.latinName,
+                    origins: updateProduct.origins,
+                    family: updateProduct.family,
+                    pictures: updateProduct.pictures,
+                    description: updateProduct.description,
                 });
             } else {
                 return res.status(400).json({ message: "Bad Request." });
