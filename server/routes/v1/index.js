@@ -1,6 +1,7 @@
 const v1 = require("express").Router();
 const ProductController = require("../../controllers/productController");
 const authentication = require("../../middlewares/authentication");
+const productRoute = require("./products");
 const userRoute = require("./user");
 
 v1.get("/", (req, res) => {
@@ -10,6 +11,6 @@ v1.get("/", (req, res) => {
 // User Route
 v1.use("/user", userRoute);
 v1.use(authentication);
-v1.get("/product", ProductController.getAllProduct);
+v1.use("/products", productRoute);
 
 module.exports = v1;

@@ -13,7 +13,7 @@ class RegisterController {
             if (isUsernameAvailable) {
                 return res
                     .status(400)
-                    .json({ message: "Username is already taken" });
+                    .json({ message: "Username is already taken." });
             }
 
             // Email Cheker
@@ -23,7 +23,7 @@ class RegisterController {
             if (isEmailAvailable) {
                 return res
                     .status(400)
-                    .json({ message: "Email is already taken" });
+                    .json({ message: "Email is already taken." });
             }
 
             // User Creation
@@ -36,12 +36,12 @@ class RegisterController {
             const createUser = await User.create(payloadUser);
             if (createUser) {
                 return res.status(201).json({
-                    message: "Congrats, user is created!!",
+                    message: "Congrats!! User is created.",
                     username: createUser.username,
                     email: createUser.email,
                 });
             } else {
-                return res.status(400).json({ message: "Bad Request" });
+                return res.status(400).json({ message: "Bad Request." });
             }
         } catch (error) {
             console.error(error);

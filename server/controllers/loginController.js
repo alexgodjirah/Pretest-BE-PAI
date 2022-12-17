@@ -15,7 +15,7 @@ class LoginController {
             if (!findUser) {
                 return res.status(400).json({
                     message:
-                        "Username is not found, please register or input the right username",
+                        "Username is not found, please register or input the right username.",
                 });
             }
 
@@ -42,7 +42,7 @@ class LoginController {
 
             // Return Result
             return res.status(200).json({
-                message: "Login Success",
+                message: "Congrats!! Login is success.",
                 id: findUser.id,
                 role: findUser.role,
                 access_token: accessToken,
