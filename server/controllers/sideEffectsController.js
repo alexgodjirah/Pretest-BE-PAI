@@ -37,7 +37,7 @@ class SideEffectsController {
             }
 
             // ID checker
-            const isIDExist = await Benefits.findOne({
+            const isIDExist = await SideEffects.findOne({
                 where: { id: productID },
             });
 

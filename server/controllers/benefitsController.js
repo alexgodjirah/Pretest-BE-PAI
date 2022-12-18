@@ -34,7 +34,7 @@ class BenefitsController {
             // Authorization
             if (role !== "admin") {
                 return res.status(401).json({
-                    message: "Only Admin s authorizaed to enter this page!!",
+                    message: "Only Admin is authorized to enter this page!!",
                 });
             }
 
@@ -45,7 +45,7 @@ class BenefitsController {
 
             if (!isIDExist) {
                 return res.status(404).json({
-                    message: "Product Benefits is not found",
+                    message: "Product Benefits are not found",
                 });
             }
 

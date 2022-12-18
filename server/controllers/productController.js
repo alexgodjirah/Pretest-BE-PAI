@@ -103,7 +103,7 @@ class ProductController {
             }
 
             // ID checker
-            const isIDExist = await Benefits.findOne({
+            const isIDExist = await Product.findOne({
                 where: { id: id },
             });
 
