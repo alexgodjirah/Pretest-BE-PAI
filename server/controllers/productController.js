@@ -9,7 +9,9 @@ class ProductController {
             });
 
             if (!allProduct.length) {
-                return res.status(404).json("Plase add new product.");
+                return res
+                    .status(404)
+                    .json({ message: "Plase add new product." });
             } else {
                 return res.status(200).json(allProduct);
             }
