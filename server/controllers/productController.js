@@ -60,7 +60,7 @@ class ProductController {
                 return res.status(400).json({ message: "Bad Request." });
             }
         } catch (error) {
-            console.log(error);
+            console.error(error);
             return res.status(500).json({ message: error.message });
         }
     };
@@ -104,10 +104,43 @@ class ProductController {
                     description: updateProduct.description,
                 });
             } else {
-                return res.status(400).json({ message: "Bad Request." });
+                return res
+                    .status(400)
+                    .json({ message: "Bad Request or Product is not found." });
             }
         } catch (error) {
-            console.log(error);
+            console.error(error);
+            return res.status(500).json({ message: error.message });
+        }
+    };
+
+    // Delete Product
+    static deleteProduct = async (req, res) => {
+        const { id } = req.params;
+        const { role } = req.user;
+
+        try {
+            // Authorization
+            if (role !== "admin") {
+                return res.status(401).json({
+                    message: "Only admin is authorized to enter this page!!",
+                });
+            }
+
+            const deleteProduct = await Product.destroy({
+                where: { id: id },
+            });
+            if (deleteProduct) {
+                return res.status(200).json({
+                    message: "Congrats!! Product is deleted.",
+                });
+            } else {
+                return res
+                    .status(400)
+                    .json({ message: "Bad Request or Product is not found." });
+            }
+        } catch (error) {
+            console.error(error);
             return res.status(500).json({ message: error.message });
         }
     };
