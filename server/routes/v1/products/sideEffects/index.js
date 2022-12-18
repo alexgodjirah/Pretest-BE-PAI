@@ -1,6 +1,6 @@
-const SideEffectsController = require("../../../../controllers/sideEffectsController");
-
 const sideEffectsRoute = require("express").Router();
+
+const SideEffectsController = require("../../../../controllers/sideEffectsController");
 
 sideEffectsRoute.get("/", SideEffectsController.getAllSideEffects);
 sideEffectsRoute.put(
