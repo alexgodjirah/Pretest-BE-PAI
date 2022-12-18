@@ -102,6 +102,17 @@ class ProductController {
                 });
             }
 
+            // ID checker
+            const isIDExist = await Benefits.findOne({
+                where: { id: id },
+            });
+
+            if (!isIDExist) {
+                return res.status(404).json({
+                    message: "Product is not found",
+                });
+            }
+
             const payloadProduct = {
                 title,
                 latinName,
@@ -163,11 +174,9 @@ class ProductController {
                 });
 
                 if (!deleteBenefits || !deleteSideEffects || !deleteNutrient) {
-                    return res
-                        .status(400)
-                        .json({
-                            message: "Bad Request or Product is not found.",
-                        });
+                    return res.status(400).json({
+                        message: "Bad Request or Product is not found.",
+                    });
                 }
 
                 return res.status(200).json({

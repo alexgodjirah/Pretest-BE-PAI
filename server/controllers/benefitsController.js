@@ -38,6 +38,17 @@ class BenefitsController {
                 });
             }
 
+            // ID checker
+            const isIDExist = await Benefits.findOne({
+                where: { id: productID },
+            });
+
+            if (!isIDExist) {
+                return res.status(404).json({
+                    message: "Product Benefits is not found",
+                });
+            }
+
             const payloadBenefits = {
                 title,
                 description,
@@ -48,14 +59,14 @@ class BenefitsController {
             });
             if (updateBenefits) {
                 return res.status(200).json({
-                    message: "Congratss!! Benefits is updated.",
+                    message: "Congrats!! Benefits is updated.",
                     title: updateBenefits.title,
                     description: updateBenefits.description,
                 });
             } else {
                 return res
                     .status(400)
-                    .json({ message: "Bad Request or Product is not found" });
+                    .json({ message: "Bad Request or Product is not found." });
             }
         } catch (error) {
             console.error(error);
