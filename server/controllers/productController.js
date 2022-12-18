@@ -62,7 +62,6 @@ class ProductController {
                 const createSideEffects = await SideEffects.create(
                     payloadProductID
                 );
-
                 const createNutrient = await NutrientDetails.create(
                     payloadProductID
                 );
@@ -153,6 +152,24 @@ class ProductController {
                 where: { id: id },
             });
             if (deleteProduct) {
+                const deleteBenefits = await Benefits.destroy({
+                    where: { id: id },
+                });
+                const deleteSideEffects = await SideEffects.destroy({
+                    where: { id: id },
+                });
+                const deleteNutrient = await NutrientDetails.destroy({
+                    where: { id: id },
+                });
+
+                if (!deleteBenefits || !deleteSideEffects || !deleteNutrient) {
+                    return res
+                        .status(400)
+                        .json({
+                            message: "Bad Request or Product is not found.",
+                        });
+                }
+
                 return res.status(200).json({
                     message: "Congrats!! Product is deleted.",
                 });
