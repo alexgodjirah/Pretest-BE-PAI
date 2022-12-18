@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
             Product.hasOne(models.SideEffects, {
                 foreignKey: "productID",
             });
-            Product.hasOne(models.NutrionDetail, {
+            Product.hasOne(models.NutrientDetails, {
                 foreignKey: "productID",
             });
         }

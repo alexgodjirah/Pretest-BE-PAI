@@ -6,7 +6,7 @@ const express = require("express");
 const App = express();
 const routes = require("./routes");
 
-// Dependencies Installation
+// Libraries Installation
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 

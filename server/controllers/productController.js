@@ -1,4 +1,9 @@
-const { Product } = require("../models");
+const {
+    Product,
+    Benefits,
+    SideEffects,
+    NutrientDetails,
+} = require("../models");
 
 class ProductController {
     // Show All Product(s)
@@ -49,14 +54,29 @@ class ProductController {
 
             const createProduct = await Product.create(payloadProduct);
             if (createProduct) {
+                const payloadProductID = {
+                    productID: createProduct.id,
+                };
+
+                const createBenefits = await Benefits.create(payloadProductID);
+                const createSideEffects = await SideEffects.create(
+                    payloadProductID
+                );
+
+                const createNutrient = await NutrientDetails.create(
+                    payloadProductID
+                );
+
+                if (!createBenefits || !createSideEffects || !createNutrient) {
+                    return res.status(400).json({ message: "Bad Request." });
+                }
+
                 return res.status(201).json({
                     message: "Congrats!! Product is created.",
-                    title: createProduct.title,
-                    "latin name": createProduct.latinName,
-                    origins: createProduct.origins,
-                    family: createProduct.family,
-                    pictures: createProduct.pictures,
-                    description: createProduct.description,
+                    Title: createProduct.title,
+                    "Benefits ID": createBenefits.productID,
+                    "Side Effects ID": createSideEffects.productID,
+                    "Nutrient ID": createNutrient.productID,
                 });
             } else {
                 return res.status(400).json({ message: "Bad Request." });

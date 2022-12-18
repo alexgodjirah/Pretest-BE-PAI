@@ -22,7 +22,7 @@
 
 ### Nutrion-Detail
 
-`npx sequelize-cli model:generate --name NutrionDetail --attributes details:array`
+`npx sequelize-cli model:generate --name NutrientDetails --attributes productID:integer,details:array`
 
 ## Seed
 

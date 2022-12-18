@@ -22,6 +22,46 @@ class BenefitsController {
             });
         }
     };
+
+    // Update Benefits
+    static updateBenefits = async (req, res) => {
+        const { productID } = req.params;
+        const { title, description } = req.body;
+
+        const { role } = req.user;
+
+        try {
+            // Authorization
+            if (role !== "admin") {
+                return res.status(401).json({
+                    message: "Only Admin s authorizaed to enter this page!!",
+                });
+            }
+
+            const payloadBenefits = {
+                title,
+                description,
+            };
+
+            const updateBenefits = await Benefits.update(payloadBenefits, {
+                where: { id: productID },
+            });
+            if (updateBenefits) {
+                return res.status(200).json({
+                    message: "Congratss!! Benefits is updated.",
+                    title: updateBenefits.title,
+                    description: updateBenefits.description,
+                });
+            } else {
+                return res
+                    .status(400)
+                    .json({ message: "Bad Request or Product is not found" });
+            }
+        } catch (error) {
+            console.error(error);
+            return res.status(500).json({ message: error.message });
+        }
+    };
 }
 
 module.exports = BenefitsController;
