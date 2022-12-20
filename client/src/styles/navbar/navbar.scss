@@ -1,0 +1,11 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar--items {
+    .items--list {
+        display: flex;
+        gap: 2em;
+    }
+}
