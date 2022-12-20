@@ -2,10 +2,7 @@ const { User } = require("../models");
 const { verifyToken } = require("../helpers/tokenHandler");
 
 const authentication = async (req, res, next) => {
-    // console.log(req);
     const { access_token } = req.cookies;
-    // console.log(req.cookies);
-    console.log(access_token);
     try {
         if (access_token) {
             const decodedData = await verifyToken(access_token);

@@ -162,7 +162,8 @@ class ProductController {
             const deleteProduct = await Product.destroy({
                 where: { id: id },
             });
-            if (deleteProduct) {
+            console.log(deleteProduct);
+            if (deleteProduct == 1) {
                 const deleteBenefits = await Benefits.destroy({
                     where: { id: id },
                 });
@@ -173,7 +174,11 @@ class ProductController {
                     where: { id: id },
                 });
 
-                if (!deleteBenefits || !deleteSideEffects || !deleteNutrient) {
+                if (
+                    deleteBenefits != 1 ||
+                    deleteSideEffects != 1 ||
+                    deleteNutrient != 1
+                ) {
                     return res.status(400).json({
                         message: "Bad Request or Product is not found.",
                     });
