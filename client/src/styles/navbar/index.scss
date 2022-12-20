@@ -1,0 +1,31 @@
+$color-primary: #61ce70;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem 0;
+}
+
+.navbar--items {
+    .items--list {
+        display: flex;
+        gap: 1em;
+        transition: transform 1s ease-in-out;
+
+        .list--items {
+            transition: color 200ms ease-in, border 200ms ease-in,
+                color 200ms ease-in;
+
+            padding: 0 1em;
+        }
+
+        .list--items:hover {
+            // transform: scale(1.2);
+            cursor: pointer;
+            padding-bottom: 1em;
+            color: $color-primary;
+            border-bottom: 0.2em solid $color-primary;
+        }
+    }
+}
