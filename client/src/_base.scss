@@ -19,4 +19,32 @@ $color-primary: #61ce70;
     max-width: 1300px;
 
     margin: 0 auto;
+    border: 1px solid #61ce70;
+}
+
+.container_2 {
+    width: 85%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+    border: 1px solid #61ce70;
+}
+
+.navbar--sticky {
+    position: sticky;
+    top: 0em;
+    background-color: white;
+}
+
+.button {
+    padding: 1em 0;
+    border-radius: 10em;
+    border: 0;
+
+    width: 10em;
+
+    font-size: $font-p;
+    color: white;
+
+    background-color: $color-primary;
 }

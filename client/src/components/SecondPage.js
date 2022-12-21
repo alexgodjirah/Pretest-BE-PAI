@@ -4,7 +4,7 @@ import "../styles/secondPage/index.css";
 export default function SecondPage() {
     return (
         <>
-            <main className="second_page container">
+            <main className="second_page container_2">
                 <div className="second_page--image"></div>
                 <section className="second_page--text">
                     <h2>We Surely Need Integrated Pest and Weed Management</h2>
@@ -20,7 +20,7 @@ export default function SecondPage() {
                         pesticides while still being effective and efficient in
                         controlling crop plant pests.
                     </p>
-                    <button>Learn more</button>
+                    <button className="button">Learn more</button>
                 </section>
             </main>
         </>

@@ -1,6 +1,7 @@
 import FirstPage from "./components/FirstPage";
 import Navbar from "./components/Navbar";
 import SecondPage from "./components/SecondPage";
+import ThirdPage from "./components/ThirdPage";
 
 function App() {
     return (
@@ -11,8 +12,13 @@ function App() {
             <main>
                 <FirstPage />
             </main>
-            <main>
+
+            <main className="container">
                 <SecondPage />
+            </main>
+
+            <main className="container">
+                <ThirdPage />
             </main>
         </div>
     );
