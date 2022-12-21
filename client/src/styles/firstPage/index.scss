@@ -1,0 +1,37 @@
+@use "../../base";
+
+.first_page {
+    text-align: center;
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .first_page--title {
+        padding: 4em 0;
+        h1 {
+            font-size: base.$font-h1;
+            font-weight: base.$font-weight-3;
+        }
+    }
+
+    .first_page--line {
+        width: 3%;
+        height: 0.5em;
+        border: 1px solid base.$color-primary;
+        border-radius: 10em;
+        background-color: base.$color-primary;
+        margin: 0 auto;
+    }
+
+    .first_page--paragraph {
+        width: 50%;
+        margin: 0 auto;
+        padding: 4em 0;
+
+        p {
+            font-size: base.$font-h2;
+        }
+    }
+}
