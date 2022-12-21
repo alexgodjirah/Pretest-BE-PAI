@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import SecondPage from "./components/SecondPage";
 import ThirdPage from "./components/ThirdPage";
 import FourthPage from "./components/FourthPage";
+import FifthPage from "./components/FifthPage";
 
 function App() {
     return (
@@ -24,6 +25,10 @@ function App() {
 
             <main className="container">
                 <FourthPage />
+            </main>
+
+            <main className="container">
+                <FifthPage />
             </main>
         </div>
     );
