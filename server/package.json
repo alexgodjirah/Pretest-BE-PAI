@@ -5,11 +5,12 @@
     "main": "index.js",
     "scripts": {
         "start": "nodemon index.js",
-        "create-db": "npx sequelize db:create",
-        "migrate-db": "npx sequelize db:migrate",
-        "unmigrate-db": "npx sequelize db:migrate:undo:all",
-        "seed-db": "npx sequelize db:seed:all",
-        "unseed-db": "npx sequelize db:seed:undo:all"
+        "db-create": "npx sequelize db:create",
+        "db-drop": "npx sequelize db:drop",
+        "db-migrate": "npx sequelize db:migrate",
+        "db-unmigrate": "npx sequelize db:migrate:undo:all",
+        "db-seed": "npx sequelize db:seed:all",
+        "db-unseed": "npx sequelize db:seed:undo:all"
     },
     "prettier": {
         "trailingComma": "es5",
