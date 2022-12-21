@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+.container {
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,12 +21,10 @@
   font-size: 62.5%;
 }
 
-li {
-  list-style: none;
+html {
+  scroll-behavior: smooth;
 }
 
-.container {
-  width: 95%;
-  max-width: 1300px;
-  margin: 0 auto;
+li {
+  list-style: none;
 }/*# sourceMappingURL=index.css.map */
