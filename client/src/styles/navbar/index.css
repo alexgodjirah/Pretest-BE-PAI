@@ -22,7 +22,7 @@
   padding: 1em 1em;
 }
 .navbar--items .items--list .list--items h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .navbar--items .items--list .list--items:hover {
   cursor: pointer;
