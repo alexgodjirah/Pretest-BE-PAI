@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+.container {
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+  border: 1px solid #61ce70;
+}
+
+.container_2 {
+  width: 85%;
+  max-width: 1300px;
+  margin: 0 auto;
+  border: 1px solid #61ce70;
+}
+
+.navbar--sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0em;
+  background-color: white;
+}
+
+.button {
+  padding: 1em 0;
+  border-radius: 10em;
+  border: 0;
+  width: 10em;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #61ce70;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navbar--items .items--list {
+  display: flex;
+  gap: 1em;
+  transition: transform 1s ease-in-out;
+}
+.navbar--items .items--list .list--items {
+  transition: color 200ms ease-in, border 200ms ease-in, color 200ms ease-in;
+  padding: 1em 1em;
+}
+.navbar--items .items--list .list--items h3 {
+  font-size: 2rem;
+}
+.navbar--items .items--list .list--items:hover {
+  cursor: pointer;
+  color: #61ce70;
+  border-bottom: 0.2rem solid #61ce70;
+}/*# sourceMappingURL=index.css.map */

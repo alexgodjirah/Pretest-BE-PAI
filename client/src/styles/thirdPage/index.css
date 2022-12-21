@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+.container {
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+  border: 1px solid #61ce70;
+}
+
+.container_2 {
+  width: 85%;
+  max-width: 1300px;
+  margin: 0 auto;
+  border: 1px solid #61ce70;
+}
+
+.navbar--sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0em;
+  background-color: white;
+}
+
+.button {
+  padding: 1em 0;
+  border-radius: 10em;
+  border: 0;
+  width: 10em;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #61ce70;
+}
+
+.third_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  gap: 10rem;
+}
+.third_page .third_page--title {
+  font-size: 5rem;
+  color: #61ce70;
+}
+.third_page .third_page--text {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.third_page .third_page--text .text--container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+.third_page .third_page--text .text--container .text--icon {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #61ce70;
+}
+.third_page .third_page--text .text--container h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.third_page .third_page--text .text--container p {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=index.css.map */

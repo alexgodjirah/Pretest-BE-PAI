@@ -1,0 +1,35 @@
+@use "../../base";
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 0;
+}
+
+.navbar--items {
+    .items--list {
+        display: flex;
+        gap: 1em;
+        transition: transform 1s ease-in-out;
+
+        .list--items {
+            transition: color 200ms ease-in, border 200ms ease-in,
+                color 200ms ease-in;
+
+            padding: 1em 1em;
+
+            h3 {
+                font-size: base.$font-h3;
+            }
+        }
+
+        .list--items:hover {
+            // transform: scale(1.2);
+            cursor: pointer;
+            color: base.$color-primary;
+            border-bottom: 0.2rem solid base.$color-primary;
+        }
+    }
+}

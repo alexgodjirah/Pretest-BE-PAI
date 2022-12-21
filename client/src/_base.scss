@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+
+// Font
+$font-h1: 5rem;
+$font-h2: 3rem;
+$font-h3: 2rem;
+$font-p: 1.5rem;
+
+$font-weight-1: 900;
+$font-weight-2: 700;
+$font-weight-3: 400;
+$font-weight-4: 300;
+
+// Color
+$color-primary: #61ce70;
+
+.container {
+    width: 95%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+    border: 1px solid #61ce70;
+}
+
+.container_2 {
+    width: 85%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+    border: 1px solid #61ce70;
+}
+
+.navbar--sticky {
+    position: sticky;
+    top: 0em;
+    background-color: white;
+}
+
+.button {
+    padding: 1em 0;
+    border-radius: 10em;
+    border: 0;
+
+    width: 10em;
+
+    font-size: $font-p;
+    color: white;
+
+    background-color: $color-primary;
+}

@@ -1,0 +1,50 @@
+@use "../../base";
+
+.third_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+
+    gap: 10rem;
+
+    .third_page--title {
+        font-size: base.$font-h1;
+        color: base.$color-primary;
+    }
+
+    .third_page--text {
+        display: flex;
+        justify-content: space-between;
+
+        text-align: center;
+
+        .text--container {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 1.5em;
+
+            .text--icon {
+                width: 5rem;
+                height: 5rem;
+                border: 1px solid black;
+                border-radius: 50%;
+                background-color: base.$color-primary;
+            }
+
+            h3 {
+                font-size: base.$font-h3;
+                font-weight: base.$font-weight-3;
+            }
+
+            p {
+                font-size: base.$font-p;
+            }
+        }
+    }
+}

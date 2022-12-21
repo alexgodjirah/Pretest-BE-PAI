@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+.container {
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+  border: 1px solid #61ce70;
+}
+
+.container_2 {
+  width: 85%;
+  max-width: 1300px;
+  margin: 0 auto;
+  border: 1px solid #61ce70;
+}
+
+.navbar--sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0em;
+  background-color: white;
+}
+
+.button {
+  padding: 1em 0;
+  border-radius: 10em;
+  border: 0;
+  width: 10em;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #61ce70;
+}
+
+.fifth_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+  padding-top: 15em;
+  padding-bottom: 15em;
+}
+.fifth_page h1 {
+  font-size: 5rem;
+}
+.fifth_page p {
+  font-size: 1.5rem;
+}
+.fifth_page .fifth_page--images {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.fifth_page .fifth_page--images .image {
+  width: 15em;
+  height: 25em;
+  border: 1px solid black;
+  border-radius: 2em;
+}/*# sourceMappingURL=index.css.map */
