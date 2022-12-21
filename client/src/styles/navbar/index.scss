@@ -1,8 +1,9 @@
-$color-primary: #61ce70;
+@use "../../base";
 
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     padding: 1rem 0;
 }
@@ -17,15 +18,18 @@ $color-primary: #61ce70;
             transition: color 200ms ease-in, border 200ms ease-in,
                 color 200ms ease-in;
 
-            padding: 0 1em;
+            padding: 1em 1em;
+
+            h3 {
+                font-size: base.$font-h3;
+            }
         }
 
         .list--items:hover {
             // transform: scale(1.2);
             cursor: pointer;
-            padding-bottom: 1em;
-            color: $color-primary;
-            border-bottom: 0.2em solid $color-primary;
+            color: base.$color-primary;
+            border-bottom: 0.2em solid base.$color-primary;
         }
     }
 }
