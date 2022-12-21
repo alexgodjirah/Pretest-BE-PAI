@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+
+// Font
+$font-h1: 5rem;
+$font-h2: 3rem;
+$font-h3: 1.5rem;
+$font-p: 1rem;
+
+$font-weight-1: 900;
+$font-weight-2: 700;
+$font-weight-3: 400;
+$font-weight-4: 300;
+
+// Color
+$color-primary: #61ce70;
+
+.container {
+    width: 95%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+}
