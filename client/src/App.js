@@ -38,7 +38,7 @@ function App() {
                 <SixthPage />
             </main>
 
-            <footer className="container">
+            <footer id="footer">
                 <Footer />
             </footer>
         </div>

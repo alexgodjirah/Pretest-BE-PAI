@@ -3,7 +3,7 @@
 .second_page {
     display: flex;
     padding-top: 40em;
-    padding-bottom: 15em;
+    padding-bottom: 20em;
 
     // border: 1px solid black;
 
@@ -21,7 +21,7 @@
         flex-direction: column;
         gap: 2.5em;
 
-        border: 1px solid black;
+        // border: 1px solid black;
 
         h2 {
             font-size: base.$font-h2;

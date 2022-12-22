@@ -3,7 +3,6 @@
   width: 95%;
   max-width: 1300px;
   margin: 0 auto;
-  border: 1px solid #61ce70;
 }
 
 .container_2 {
@@ -45,13 +44,14 @@
 .footer .footer--columns {
   display: grid;
   grid-template-columns: 1fr 2.5fr 1fr 1fr 1fr;
-  gap: 1.5rem;
-  width: 100%;
+  gap: 2rem;
+  width: 95%;
+  margin: 0 auto;
 }
 .footer .footer--columns .footer--container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1.5rem;
 }
 .footer .footer--columns .footer--container h3 {
   font-size: 2rem;

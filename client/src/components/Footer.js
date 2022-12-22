@@ -4,7 +4,7 @@ import "../styles/footer/index.css";
 export default function Footer() {
     return (
         <>
-            <footer className="footer">
+            <footer className="footer container">
                 <div className="footer--columns">
                     <div className="footer--container">
                         <h3>Logo</h3>

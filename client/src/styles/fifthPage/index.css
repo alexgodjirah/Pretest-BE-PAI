@@ -3,7 +3,6 @@
   width: 95%;
   max-width: 1300px;
   margin: 0 auto;
-  border: 1px solid #61ce70;
 }
 
 .container_2 {
@@ -42,7 +41,7 @@
   align-items: center;
   text-align: center;
   gap: 2em;
-  padding: 15rem 0;
+  padding: 20rem 0;
 }
 .fifth_page h1 {
   font-size: 5rem;
