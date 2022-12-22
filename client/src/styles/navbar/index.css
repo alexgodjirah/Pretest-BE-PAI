@@ -10,7 +10,6 @@
   width: 85%;
   max-width: 1300px;
   margin: 0 auto;
-  border: 1px solid #61ce70;
 }
 
 .navbar--sticky {
@@ -29,6 +28,12 @@
   font-size: 1.5rem;
   color: white;
   background-color: #61ce70;
+}
+
+.font--paragraph {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
 }
 
 .navbar {

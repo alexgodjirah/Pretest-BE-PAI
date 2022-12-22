@@ -82,8 +82,12 @@ export default function SixthPage() {
                     </div>
                 </div>
                 <div className="sixth_page--anchor">
-                    <a href="#">&#171; Previous</a>
-                    <a href="#">Next &#187;</a>
+                    <a className="font--paragraph" href="#">
+                        &#171; Previous
+                    </a>
+                    <a className="font--paragraph" href="#">
+                        Next &#187;
+                    </a>
                 </div>
             </main>
         </>
