@@ -10,7 +10,7 @@ export default function Footer() {
                 </h1>
 
                 <form className="newsletter--input">
-                    <input placeholder="Email" />
+                    <input placeholder="Email" type="email" />
                     <button className="button">Subscribe</button>
                 </form>
             </div>
