@@ -4,6 +4,16 @@ import "../styles/footer/index.css";
 export default function Footer() {
     return (
         <>
+            <div className="newsletter">
+                <h1>
+                    Let's <b>Create sustainable agriculture</b> Together!
+                </h1>
+
+                <form className="newsletter--input">
+                    <input placeholder="Email" />
+                    <button className="button">Subscribe</button>
+                </form>
+            </div>
             <footer className="footer container">
                 <div className="footer--columns">
                     <div className="footer--container">

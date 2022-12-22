@@ -1,5 +1,35 @@
 @use "../../base";
 
+.newsletter {
+    width: 60%;
+    padding: 5rem 0;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid black;
+    border-radius: 2.5em;
+
+    gap: 3em;
+
+    .newsletter--input {
+        // border: 1px solid black;
+        display: flex;
+        gap: 1.5rem;
+
+        input {
+            padding: 1rem 1rem;
+            width: 30em;
+
+            border-radius: 1em;
+            border: 1px solid black;
+        }
+    }
+}
+
 .footer {
     display: flex;
     flex-direction: column;
