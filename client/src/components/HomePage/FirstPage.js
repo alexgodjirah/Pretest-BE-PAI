@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
-import "../../styles/FirstPage/index.css";
+import "../../styles/HomePage/FirstPage/index.css";
 
 export default function FirstPage() {
     return (

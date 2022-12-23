@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/FourthPage/index.css";
+import "../../styles/HomePage/FourthPage/index.css";
 
 export default function FourthPage() {
     return (

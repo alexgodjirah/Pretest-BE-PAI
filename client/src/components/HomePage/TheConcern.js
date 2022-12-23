@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/TheConcern/index.css";
+import "../../styles/HomePage/TheConcern/index.css";
 
 export default function TheConcern() {
     return (

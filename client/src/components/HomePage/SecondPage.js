@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/SecondPage/index.css";
+import "../../styles/HomePage/SecondPage/index.css";
 
 export default function SecondPage() {
     return (

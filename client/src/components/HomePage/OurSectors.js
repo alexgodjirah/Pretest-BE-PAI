@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/OurSectors/index.css";
+import "../../styles/HomePage/OurSectors/index.css";
 
 export default function OurSectors() {
     return (

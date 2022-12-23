@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/LastestNews/index.css";
+import "../../styles/HomePage/LastestNews/index.css";
 
 export default function LastestNews() {
     const newDate = new Date().toLocaleString("en-US", {
