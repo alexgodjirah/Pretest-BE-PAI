@@ -1,17 +1,35 @@
-import Navbar from "./components/Navbar";
-import FirstPage from "./components/HomePage/FirstPage";
-import SecondPage from "./components/HomePage/SecondPage";
-import TheConcern from "./components/HomePage/TheConcern";
-import FourthPage from "./components/HomePage/FourthPage";
-import OurSectors from "./components/HomePage/OurSectors";
-import LastestNews from "./components/HomePage/LastestNews";
-import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
+import React, { Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import routes from "./routes";
+
+import { ScaleLoader } from "react-spinners";
 
 function App() {
     return (
         <div className="App">
-            <HomePage />
+            <Suspense
+                fallback={
+                    <ScaleLoader
+                        cssOverride={{
+                            width: "100%",
+                            height: "100vh",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    />
+                }
+            >
+                <Routes>
+                    {routes.map((route, idx) => (
+                        <Route
+                            path={route.path}
+                            element={route.element}
+                            key={idx}
+                        />
+                    ))}
+                </Routes>
+            </Suspense>
         </div>
     );
 }
