@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
 
 // Font
 $font-h1: 5rem;
@@ -8,26 +8,11 @@ $font-p: 1.5rem;
 
 $font-weight-1: 900;
 $font-weight-2: 700;
-$font-weight-3: 400;
+$font-weight-3: 500;
 $font-weight-4: 300;
 
 // Color
 $color-primary: #61ce70;
-
-.container {
-    width: 95%;
-    max-width: 1300px;
-
-    margin: 0 auto;
-    // border: 1px solid #61ce70;
-}
-
-.container_2 {
-    width: 85%;
-    max-width: 1300px;
-
-    margin: 0 auto;
-}
 
 .navbar--sticky {
     position: sticky;
@@ -35,6 +20,22 @@ $color-primary: #61ce70;
     z-index: 1;
 
     background-color: white;
+}
+
+.container {
+    width: 95%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+    border: 1px solid blueviolet;
+}
+
+.container_2 {
+    width: 85%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+    border: 1px solid blueviolet;
 }
 
 .button {
@@ -50,8 +51,23 @@ $color-primary: #61ce70;
     background-color: $color-primary;
 }
 
+.font--h1 {
+    font-size: $font-h1;
+    font-weight: $font-weight-1;
+    text-decoration: none;
+}
+.font--h2 {
+    font-size: $font-h2;
+    font-weight: $font-weight-2;
+    text-decoration: none;
+}
+.font--h3 {
+    font-size: $font-h3;
+    font-weight: $font-weight-3;
+    text-decoration: none;
+}
 .font--paragraph {
     font-size: $font-p;
+    font-weight: $font-weight-4;
     text-decoration: none;
-    color: black;
 }
