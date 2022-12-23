@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/footer/index.css";
+import "../styles/Footer/index.css";
 
 export default function Footer() {
     return (
@@ -14,6 +14,7 @@ export default function Footer() {
                     <button className="button">Subscribe</button>
                 </form>
             </div>
+
             <footer className="footer container">
                 <div className="footer--columns">
                     <div className="footer--container">

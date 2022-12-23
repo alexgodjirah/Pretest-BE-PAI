@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/sixthPage/index.css";
+import "../../styles/LastestNews/index.css";
 
-export default function SixthPage() {
+export default function LastestNews() {
     const newDate = new Date().toLocaleString("en-US", {
         // weekday: "long",
         year: "numeric",

@@ -67,7 +67,7 @@
   display: grid;
   grid-template-columns: 1fr 2.5fr 1fr 1fr 1fr;
   gap: 2rem;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 .footer .footer--columns .footer--container {
@@ -82,6 +82,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  flex-shrink: 0;
 }
 .footer .footer--columns .footer--container .footer--items_list .items_list--content {
   display: flex;
@@ -90,6 +91,7 @@
 .footer .footer--columns .footer--container .footer--items_list .footer--icon {
   width: 2rem;
   height: 2rem;
+  flex-shrink: 0;
   border: 1px solid pink;
 }
 .footer .footer--footer {

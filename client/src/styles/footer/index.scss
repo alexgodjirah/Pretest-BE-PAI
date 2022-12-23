@@ -16,7 +16,6 @@
     gap: 3em;
 
     .newsletter--input {
-        // border: 1px solid black;
         display: flex;
         gap: 1.5rem;
 
@@ -42,11 +41,9 @@
         display: grid;
         grid-template-columns: 1fr 2.5fr 1fr 1fr 1fr;
 
-        // border: 1px solid black;
-
         gap: 2rem;
 
-        width: 95%;
+        width: 90%;
 
         margin: 0 auto;
 
@@ -66,6 +63,7 @@
 
                 gap: 0.5rem;
 
+                flex-shrink: 0;
                 // margin: 0 auto;
 
                 .items_list--content {
@@ -76,6 +74,8 @@
                 .footer--icon {
                     width: 2rem;
                     height: 2rem;
+
+                    flex-shrink: 0;
 
                     border: 1px solid pink;
                 }

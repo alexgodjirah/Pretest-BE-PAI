@@ -1,13 +1,13 @@
 import React from "react";
-import "../styles/fourthPage/index.css";
+import "../../styles/SecondPage/index.css";
 
-export default function FourthPage() {
+export default function SecondPage() {
     return (
         <>
-            <main className="fourth_page container_2">
-                <div className="fourth_page--image"></div>
-                <section className="fourth_page--text">
-                    <h2>The Solut-ion "Pesticides Reductant"t</h2>
+            <main className="second_page container_2">
+                <div className="second_page--image"></div>
+                <section className="second_page--text">
+                    <h2>We Surely Need Integrated Pest and Weed Management</h2>
                     <p>
                         By the year 2020, the global pesticide usage has been
                         estimated to increase up to 3.5 million tons. Although
@@ -20,7 +20,7 @@ export default function FourthPage() {
                         pesticides while still being effective and efficient in
                         controlling crop plant pests.
                     </p>
-                    <button className="button">Our Product</button>
+                    <button className="button">Learn more</button>
                 </section>
             </main>
         </>

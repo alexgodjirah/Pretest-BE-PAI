@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/thirdPage/index.css";
+import "../../styles/TheConcern/index.css";
 
-export default function ThirdPage() {
+export default function TheConcern() {
     return (
         <>
             <main className="third_page container_2">

@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/fifthPage/index.css";
+import "../../styles/OurSectors/index.css";
 
-export default function FifthPage() {
+export default function OurSectors() {
     return (
         <>
             <main className="fifth_page container_2">
