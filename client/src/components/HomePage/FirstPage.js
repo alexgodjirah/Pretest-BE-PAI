@@ -16,7 +16,7 @@ export default function FirstPage() {
                     <p>
                         "Entering the 21st century, the world community is
                         starting to become aware of reducing the use of
-                        pesticides in agriculture
+                        pesticides in agriculture"
                     </p>
                 </div>
             </main>

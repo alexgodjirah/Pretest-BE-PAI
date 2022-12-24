@@ -7,8 +7,10 @@ export default function FourthPage() {
             <main className="fourth_page container_2">
                 <div className="fourth_page--image"></div>
                 <section className="fourth_page--text">
-                    <h2>The Solut-ion "Pesticides Reductant"t</h2>
-                    <p>
+                    <h2 className="font--h2">
+                        The Solut-ion "Pesticides Reductant"t
+                    </h2>
+                    <p className="font--p">
                         By the year 2020, the global pesticide usage has been
                         estimated to increase up to 3.5 million tons. Although
                         pesticides are beneficial for crop production, using

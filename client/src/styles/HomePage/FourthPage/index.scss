@@ -20,18 +20,5 @@
         display: flex;
         flex-direction: column;
         gap: 2.5em;
-
-        // border: 1px solid black;
-
-        h2 {
-            font-size: base.$font-h2;
-        }
-
-        p {
-            font-size: base.$font-p;
-            line-height: 1.5em;
-            text-align: justify;
-            width: 90%;
-        }
     }
 }

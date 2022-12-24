@@ -8,16 +8,14 @@
 
     padding: 15rem 0;
 
+    text-align: center;
+
     .appreciation--big_icons {
         display: flex;
         justify-content: space-between;
 
-        // gap: 5rem;
-
-        border: 1px solid black;
-
         .big_icons--container {
-            width: 40rem;
+            width: 45rem;
             height: 30rem;
 
             border: 1px solid black;
@@ -27,7 +25,6 @@
     .appreciation--small_icons {
         display: flex;
         justify-content: space-between;
-        border: 1px solid black;
 
         .small_icons--icons {
             border: 1px solid black;

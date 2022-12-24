@@ -1,6 +1,6 @@
 @use "../../../base";
 
-.fifth_page {
+.sectors {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,15 +11,7 @@
 
     padding: 20rem 0;
 
-    h1 {
-        font-size: base.$font-h1;
-    }
-
-    p {
-        font-size: base.$font-p;
-    }
-
-    .fifth_page--images {
+    .sectors--images {
         width: 100%;
 
         display: flex;

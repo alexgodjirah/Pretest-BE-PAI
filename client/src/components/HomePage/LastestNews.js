@@ -11,14 +11,14 @@ export default function LastestNews() {
 
     return (
         <>
-            <main className="sixth_page container_2">
-                <h2>Latest News</h2>
-                <div className="sixth_page--news">
+            <main className="lastest_news container_2">
+                <h1 className="font--h1">Latest News</h1>
+                <div className="lastest_news--news">
                     <div className="news--card">
                         <div className="card--image"></div>
                         <div className="card--text container">
-                            <h3>Title</h3>
-                            <p>
+                            <h3 className="font--h3">Title</h3>
+                            <p className="font--p">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Magnam esse dolores alias
                                 sapiente quidem unde sequi excepturi maxime
@@ -31,18 +31,15 @@ export default function LastestNews() {
                                 neque amet temporibus rerum quae quam. Molestias
                                 dolore itaque expedita, aperiam ad repellendus
                                 velit amet perferendis, minus consequatur
-                                praesentium? Quaerat fuga, recusandae ab,
-                                facilis sapiente delectus molestiae pariatur
-                                sunt tenetur nesciunt modi consequuntur soluta
-                                ea atque voluptatibus consequatur placeat
-                                distinctio quia id dolore. Officia, reiciendis
-                                quasi?
+                                praesentium?
                             </p>
                             <div className="card--readmore">
-                                <a href="#">READ MORE &#187;</a>
+                                <a href="#" className="font--p">
+                                    READ MORE &#187;
+                                </a>
                             </div>
                             <div className="card--footer">
-                                <p>{newDate}</p>
+                                <p className="font--p">{newDate}</p>
                             </div>
                         </div>
                     </div>
@@ -50,8 +47,8 @@ export default function LastestNews() {
                     <div className="news--card">
                         <div className="card--image"></div>
                         <div className="card--text container">
-                            <h3>Title</h3>
-                            <p>
+                            <h3 className="font--h3">Title</h3>
+                            <p className="font--p">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Enim eaque maxime error qui
                                 quod tempora itaque, voluptatem veniam aliquid
@@ -59,10 +56,12 @@ export default function LastestNews() {
                                 pariatur iste sed perferendis ut.
                             </p>
                             <div className="card--readmore">
-                                <a href="#">READ MORE &#187;</a>
+                                <a href="#" className="font--p">
+                                    READ MORE &#187;
+                                </a>
                             </div>
                             <div className="card--footer">
-                                <p>{newDate}</p>
+                                <p className="font--p">{newDate}</p>
                             </div>
                         </div>
                     </div>
@@ -70,22 +69,24 @@ export default function LastestNews() {
                     <div className="news--card">
                         <div className="card--image"></div>
                         <div className="card--text container">
-                            <h3>Title</h3>
-                            <p>Hello world</p>
+                            <h3 className="font--h3">Title</h3>
+                            <p className="font--p">Hello world</p>
                             <div className="card--readmore">
-                                <a href="#">READ MORE &#187;</a>
+                                <a href="#" className="font--p">
+                                    READ MORE &#187;
+                                </a>
                             </div>
                             <div className="card--footer">
-                                <p>{newDate}</p>
+                                <p className="font--p">{newDate}</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="sixth_page--anchor">
-                    <a className="font--paragraph" href="#">
+                <div className="lastest_news--anchor">
+                    <a className="font--h4" href="#">
                         &#171; Previous
                     </a>
-                    <a className="font--paragraph" href="#">
+                    <a className="font--h4" href="#">
                         Next &#187;
                     </a>
                 </div>

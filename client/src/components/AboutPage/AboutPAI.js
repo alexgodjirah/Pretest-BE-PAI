@@ -8,12 +8,12 @@ export default function AboutPAI() {
                 <div className="about_pai--text">
                     <h2 className="font--h2">About Pandawa Agri Indonesia</h2>
 
-                    <p className="font--p">
+                    <p className="font--h4">
                         Pandawa Agri Indonesia is the first life science-based
                         company from Indonesia and currently the only company
                         that has{" "}
                         <b>
-                            innovation in the development f pesticide reduction
+                            innovation in the development of pesticide reduction
                             products (pesticide reductant)
                         </b>
                         . Starting from this innovation, Pandawa Agri Indonesia

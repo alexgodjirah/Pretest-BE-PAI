@@ -11,14 +11,12 @@
   width: 95%;
   max-width: 1300px;
   margin: 0 auto;
-  border: 1px solid blueviolet;
 }
 
 .container_2 {
   width: 85%;
   max-width: 1300px;
   margin: 0 auto;
-  border: 1px solid blueviolet;
 }
 
 .button {
@@ -35,12 +33,14 @@
   font-size: 5rem;
   font-weight: 900;
   text-decoration: none;
+  color: #61ce70;
 }
 
 .font--h2 {
   font-size: 3rem;
   font-weight: 700;
   text-decoration: none;
+  color: #61ce70;
 }
 
 .font--h3 {
@@ -49,10 +49,19 @@
   text-decoration: none;
 }
 
+.font--h4 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-decoration: none;
+  line-height: 1.5em;
+}
+
 .font--p {
   font-size: 1.5rem;
   font-weight: 300;
   text-decoration: none;
+  line-height: 1.5em;
+  text-align: justify;
 }
 
 .appreciation {
@@ -60,21 +69,20 @@
   flex-direction: column;
   gap: 6rem;
   padding: 15rem 0;
+  text-align: center;
 }
 .appreciation .appreciation--big_icons {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
 }
 .appreciation .appreciation--big_icons .big_icons--container {
-  width: 40rem;
+  width: 45rem;
   height: 30rem;
   border: 1px solid black;
 }
 .appreciation .appreciation--small_icons {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
 }
 .appreciation .appreciation--small_icons .small_icons--icons {
   border: 1px solid black;
