@@ -4,9 +4,9 @@ import "../../styles/HomePage/OurSectors/index.css";
 export default function OurSectors() {
     return (
         <>
-            <main className="fifth_page container_2">
-                <h1>Our Sectors</h1>
-                <p>
+            <main className="sectors container_2">
+                <h1 className="font--h1">Our Sectors</h1>
+                <p className="font--p">
                     From rice to oil palm, from coffee to forestry, and from
                     sugarcane to corn, Pandawa Agri Indonesia aims to offer
                     sustainable agriculture through good agricultural practices
@@ -14,7 +14,7 @@ export default function OurSectors() {
                     some of our current sectors that we are in, and it doesn’t
                     stop there.
                 </p>
-                <div className="fifth_page--images">
+                <div className="sectors--images">
                     <div className="image">image1</div>
                     <div className="image">image2</div>
                     <div className="image">image3</div>

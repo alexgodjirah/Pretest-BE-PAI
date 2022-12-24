@@ -1,6 +1,6 @@
-@use "../../base";
+@use "../../../base";
 
-.third_page {
+.the_concern {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,12 +9,12 @@
 
     gap: 10rem;
 
-    .third_page--title {
+    .the_concern--title {
         font-size: base.$font-h1;
         color: base.$color-primary;
     }
 
-    .third_page--text {
+    .the_concern--text {
         display: flex;
         justify-content: space-between;
 
@@ -34,15 +34,6 @@
                 // border: 1px solid black;
                 border-radius: 50%;
                 background-color: base.$color-primary;
-            }
-
-            h3 {
-                font-size: base.$font-h3;
-                font-weight: base.$font-weight-3;
-            }
-
-            p {
-                font-size: base.$font-p;
             }
         }
     }

@@ -64,59 +64,28 @@
   text-align: justify;
 }
 
-.lastest_news {
-  display: flex;
-  flex-direction: column;
-  padding: 20rem 0;
-  gap: 2.5rem;
-}
-.lastest_news h2 {
-  font-size: 3rem;
-}
-.lastest_news .lastest_news--news {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-}
-.lastest_news .lastest_news--news .news--card {
-  display: flex;
-  flex-direction: column;
-  height: 75rem;
-  position: relative;
-  border: 1px solid black;
-  border-radius: 1rem;
-  gap: 2rem;
-}
-.lastest_news .lastest_news--news .news--card .card--image {
-  width: 100%;
-  height: 25em;
-  border: 1px solid red;
-  border-radius: 1rem;
-}
-.lastest_news .lastest_news--news .news--card .card--text {
+.team {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  text-align: center;
+  padding: 15rem 0;
 }
-.lastest_news .lastest_news--news .news--card .card--text .card--readmore {
-  margin-top: 2rem;
-}
-.lastest_news .lastest_news--news .news--card .card--text .card--readmore a {
+.team h2 {
   color: #61ce70;
 }
-.lastest_news .lastest_news--news .news--card .card--text .card--footer {
-  position: absolute;
-  bottom: 0rem;
-  padding: 1rem 0;
-  width: 90%;
-  border-top: 1px solid black;
-}
-.lastest_news .lastest_news--anchor {
-  display: flex;
-  gap: 1.5rem;
+.team .team--pics {
+  width: 50%;
+  height: 30rem;
+  border: 1px solid black;
   margin: 0 auto;
 }
-.lastest_news .lastest_news--anchor a {
-  color: #61ce70;
+.team .team--text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  gap: 2.5rem;
+  margin: 0 auto;
+  margin-top: 2rem;
 }/*# sourceMappingURL=index.css.map */

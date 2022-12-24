@@ -1,0 +1,36 @@
+@use "../../../base";
+
+.appreciation {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6rem;
+
+    padding: 15rem 0;
+
+    text-align: center;
+
+    .appreciation--big_icons {
+        display: flex;
+        justify-content: space-between;
+
+        .big_icons--container {
+            width: 45rem;
+            height: 30rem;
+
+            border: 1px solid black;
+        }
+    }
+
+    .appreciation--small_icons {
+        display: flex;
+        justify-content: space-between;
+
+        .small_icons--icons {
+            border: 1px solid black;
+
+            width: 10rem;
+            height: 3rem;
+        }
+    }
+}

@@ -7,8 +7,10 @@ export default function SecondPage() {
             <main className="second_page container_2">
                 <div className="second_page--image"></div>
                 <section className="second_page--text">
-                    <h2>We Surely Need Integrated Pest and Weed Management</h2>
-                    <p>
+                    <h2 className="font--h2">
+                        We Surely Need Integrated Pest and Weed Management
+                    </h2>
+                    <p className="font--p">
                         By the year 2020, the global pesticide usage has been
                         estimated to increase up to 3.5 million tons. Although
                         pesticides are beneficial for crop production, using

@@ -1,0 +1,40 @@
+@use "../../../base";
+
+.about_pai {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    padding: 15rem 0;
+
+    gap: 6rem;
+
+    .about_pai--text {
+        display: flex;
+        flex-direction: column;
+
+        gap: 1.5rem;
+
+        width: 90%;
+        margin: 0 auto;
+
+        h2 {
+            color: base.$color-primary;
+        }
+    }
+
+    .about_pai--icons {
+        display: flex;
+        justify-content: center;
+
+        gap: 5rem;
+
+        .icons--social {
+            width: 3rem;
+            height: 3rem;
+
+            border: 1px solid base.$color-primary;
+            border-radius: 50%;
+        }
+    }
+}

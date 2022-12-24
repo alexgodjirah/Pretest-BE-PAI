@@ -64,34 +64,28 @@
   text-align: justify;
 }
 
-.first_page {
-  text-align: center;
-  min-height: 95vh;
+.appreciation {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 6rem;
+  padding: 15rem 0;
+  text-align: center;
 }
-.first_page .first_page--title {
-  padding: 4em 0;
+.appreciation .appreciation--big_icons {
+  display: flex;
+  justify-content: space-between;
 }
-.first_page .first_page--title h1 {
-  font-size: 5rem;
-  font-weight: 500;
+.appreciation .appreciation--big_icons .big_icons--container {
+  width: 45rem;
+  height: 30rem;
+  border: 1px solid black;
 }
-.first_page .first_page--line {
-  width: 3%;
-  height: 0.5em;
-  border: 1px solid #61ce70;
-  border-radius: 10em;
-  background-color: #61ce70;
-  margin: 0 auto;
+.appreciation .appreciation--small_icons {
+  display: flex;
+  justify-content: space-between;
 }
-.first_page .first_page--paragraph {
-  width: 50%;
-  margin: 0 auto;
-  padding: 4em 0;
-}
-.first_page .first_page--paragraph p {
-  font-size: 3rem;
-  font-weight: 300;
+.appreciation .appreciation--small_icons .small_icons--icons {
+  border: 1px solid black;
+  width: 10rem;
+  height: 3rem;
 }/*# sourceMappingURL=index.css.map */

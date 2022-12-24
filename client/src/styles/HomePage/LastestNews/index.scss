@@ -1,6 +1,6 @@
-@use "../../base";
+@use "../../../base";
 
-.sixth_page {
+.lastest_news {
     display: flex;
     flex-direction: column;
 
@@ -12,7 +12,7 @@
         font-size: base.$font-h2;
     }
 
-    .sixth_page--news {
+    .lastest_news--news {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -44,21 +44,11 @@
                 flex-direction: column;
                 gap: 1.5rem;
 
-                h3 {
-                    font-size: base.$font-h3;
-                }
-
-                p {
-                    font-size: base.$font-p;
-                }
-
                 .card--readmore {
                     margin-top: 2rem;
 
                     a {
                         color: base.$color-primary;
-                        text-decoration: none;
-                        font-size: base.$font-p;
                     }
                 }
 
@@ -76,16 +66,14 @@
         }
     }
 
-    .sixth_page--anchor {
+    .lastest_news--anchor {
         display: flex;
         gap: 1.5rem;
 
         margin: 0 auto;
 
         a {
-            text-decoration: none;
             color: base.$color-primary;
-            font-size: base.$font-p;
         }
     }
 }

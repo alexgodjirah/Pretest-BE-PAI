@@ -36,26 +36,22 @@ export default function Footer() {
                         <ul className="footer--items_list">
                             <li className="items_list--content">
                                 <div className="footer--icon"></div>
-                                <p className="font--paragraph">
+                                <p className="font--p">
                                     Jl. Raya Benelanlor, Krajan, Kabat,
                                     Banyuwangi - Jawa Timur 68461
                                 </p>
                             </li>
                             <li className="items_list--content">
                                 <div className="footer--icon"></div>
-                                <p className="font--paragraph">(0333)6370737</p>
+                                <p className="font--p">(0333)6370737</p>
                             </li>
                             <li className="items_list--content">
                                 <div className="footer--icon"></div>
-                                <p className="font--paragraph">
-                                    (+62)8111077141
-                                </p>
+                                <p className="font--p">(+62)8111077141</p>
                             </li>
                             <li className="items_list--content">
                                 <div className="footer--icon"></div>
-                                <p className="font--paragraph">
-                                    info@pandawaid.com
-                                </p>
+                                <p className="font--p">info@pandawaid.com</p>
                             </li>
                         </ul>
                     </div>
@@ -63,17 +59,17 @@ export default function Footer() {
                         <h3>Product</h3>
                         <ul className="footer--item_list">
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Weed Solut-ion
                                 </a>
                             </li>
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Pest Solut-ion
                                 </a>
                             </li>
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Envros
                                 </a>
                             </li>
@@ -83,17 +79,17 @@ export default function Footer() {
                         <h3>Impact</h3>
                         <ul className="footer--item_list">
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Outline Impact
                                 </a>
                             </li>
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Measurement
                                 </a>
                             </li>
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Impact
                                 </a>
                             </li>
@@ -103,42 +99,42 @@ export default function Footer() {
                         <h3>Company</h3>
                         <ul className="footer--item_list">
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     About Us
                                 </a>
                             </li>
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Blog
                                 </a>
                             </li>
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Career
                                 </a>
                             </li>
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Contact
                                 </a>
                             </li>
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Home
                                 </a>
                             </li>
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Product
                                 </a>
                             </li>
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Sector
                                 </a>
                             </li>
                             <li className="items_list--content">
-                                <a className="font--paragraph" href="#">
+                                <a className="font--p" href="#">
                                     Task
                                 </a>
                             </li>

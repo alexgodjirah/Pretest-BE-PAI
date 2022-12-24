@@ -1,4 +1,4 @@
-@use "../../base";
+@use "../../../base";
 
 .first_page {
     text-align: center;
@@ -34,6 +34,7 @@
 
         p {
             font-size: base.$font-h2;
+            font-weight: base.$font-weight-4;
         }
     }
 }
