@@ -55,33 +55,33 @@
   text-decoration: none;
 }
 
-.first_page {
-  text-align: center;
-  min-height: 95vh;
+.about_pai {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding: 15rem 0;
+  gap: 6rem;
+}
+.about_pai .about_pai--text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.about_pai .about_pai--text h2 {
+  color: #61ce70;
+}
+.about_pai .about_pai--icons {
+  display: flex;
   justify-content: center;
+  border: 1px solid black;
+  gap: 5rem;
 }
-.first_page .first_page--title {
-  padding: 4em 0;
-}
-.first_page .first_page--title h1 {
-  font-size: 5rem;
-  font-weight: 500;
-}
-.first_page .first_page--line {
-  width: 3%;
-  height: 0.5em;
+.about_pai .about_pai--icons .icons--social {
+  width: 3rem;
+  height: 3rem;
   border: 1px solid #61ce70;
-  border-radius: 10em;
-  background-color: #61ce70;
-  margin: 0 auto;
-}
-.first_page .first_page--paragraph {
-  width: 50%;
-  margin: 0 auto;
-  padding: 4em 0;
-}
-.first_page .first_page--paragraph p {
-  font-size: 3rem;
+  border-radius: 50%;
 }/*# sourceMappingURL=index.css.map */

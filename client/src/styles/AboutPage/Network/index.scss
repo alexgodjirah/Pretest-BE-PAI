@@ -1,0 +1,18 @@
+@use "../../../base";
+
+.network {
+    text-align: center;
+
+    padding: 10rem 0;
+
+    .network--image {
+        border: 1px solid black;
+
+        width: 70%;
+        max-width: 1000px;
+        height: 40rem;
+
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+}
