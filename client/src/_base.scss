@@ -17,8 +17,9 @@ $color-primary: #61ce70;
 
 .navbar--sticky {
     position: sticky;
-    top: 0em;
-    z-index: 1;
+    top: 0;
+    // left: 0;
+    z-index: 9999;
 
     background-color: white;
 }

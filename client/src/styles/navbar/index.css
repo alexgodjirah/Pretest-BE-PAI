@@ -2,8 +2,8 @@
 .navbar--sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 0em;
-  z-index: 1;
+  top: 0;
+  z-index: 9999;
   background-color: white;
 }
 
@@ -119,25 +119,67 @@
   height: 5rem;
 }
 
-.navbar {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 7rem;
+  transition: filter 300ms ease-in-out, transform 300ms ease-in-out;
+}
+.header .navbar--logo {
+  height: 5rem;
+  padding: 1.2rem 1rem;
 }
 
-.navbar--items .items--list {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar--items .items--list {
   display: flex;
   gap: 1em;
 }
-.navbar--items .items--list .list--items {
+.navbar .navbar--items .items--list .list--items {
   transition: color 200ms ease-in, border 75ms ease-out;
   height: 5rem;
   border-bottom: 2px hidden #61ce70;
   padding: 1.2rem 1rem;
 }
-.navbar--items .items--list .list--items:hover {
+.navbar .navbar--items .items--list .list--items:hover {
   cursor: pointer;
   color: #61ce70;
-  border-bottom: 2px solid #61ce70;
+  border-bottom: 3px solid #61ce70;
+}
+
+.scroll-up header {
+  filter: drop-shadow(0 -1rem 2rem rgb(170, 170, 170));
+}
+
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+
+@-webkit-keyframes translateY {
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  50% {
+    transform: translate3d(0, -80%, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes translateY {
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  50% {
+    transform: translate3d(0, -80%, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
 }/*# sourceMappingURL=index.css.map */
