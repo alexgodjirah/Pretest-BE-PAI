@@ -6,7 +6,7 @@ export default function OurSectors() {
         <>
             <main className="sectors container_2">
                 <h1 className="font--h1">Our Sectors</h1>
-                <p className="font--p">
+                <p className="font--h4">
                     From rice to oil palm, from coffee to forestry, and from
                     sugarcane to corn, Pandawa Agri Indonesia aims to offer
                     sustainable agriculture through good agricultural practices

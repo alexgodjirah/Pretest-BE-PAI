@@ -8,7 +8,7 @@ export default function Team() {
                 <h2 className="font--h2">Our Team</h2>
                 <div className="team--pics"></div>
                 <div className="team--text">
-                    <p className="font--p">
+                    <p className="font--h4">
                         Teams with diverse disciplinary backgrounds with
                         specialities in agriculture, biochemistry, weed
                         identification, etc. We work together to provide

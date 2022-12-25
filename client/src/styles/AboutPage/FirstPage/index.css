@@ -84,6 +84,9 @@
   text-align: end;
   width: 70%;
 }
+.first_page .first_page--title_container .first_page--title h2 {
+  color: black;
+}
 .first_page .first_page--about_us {
   text-align: center;
 }/*# sourceMappingURL=index.css.map */

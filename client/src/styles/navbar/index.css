@@ -77,11 +77,8 @@
   transition: transform 1s ease-in-out;
 }
 .navbar--items .items--list .list--items {
-  transition: color 200ms ease-in, border 200ms ease-in, color 200ms ease-in;
-  padding: 1em 1em;
-}
-.navbar--items .items--list .list--items h3 {
-  font-size: 2rem;
+  transition: color 200ms ease-in;
+  padding: 1.2em 1em;
 }
 .navbar--items .items--list .list--items:hover {
   cursor: pointer;
