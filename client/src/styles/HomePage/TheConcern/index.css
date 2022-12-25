@@ -19,16 +19,6 @@
   margin: 0 auto;
 }
 
-.button {
-  padding: 1em 0;
-  border-radius: 10em;
-  border: 0;
-  width: 10em;
-  font-size: 1.5rem;
-  color: white;
-  background-color: #61ce70;
-}
-
 .font--h1 {
   font-size: 5rem;
   font-weight: 900;
@@ -62,6 +52,71 @@
   text-decoration: none;
   line-height: 1.5em;
   text-align: justify;
+}
+
+.button,
+.button-subs {
+  padding: 1em 0;
+  border-radius: 10em;
+  border: 0;
+  width: 10em;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #61ce70;
+  cursor: pointer;
+}
+
+.button-subs:hover {
+  color: #61ce70;
+  background-color: white;
+  border: 1px solid #61ce70;
+}
+
+.button:hover {
+  color: #61ce70;
+  background-color: white;
+  border: 1px solid #61ce70;
+  -webkit-animation: pulse 1.5s infinite;
+          animation: pulse 1.5s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  25% {
+    scale: 1.1;
+  }
+  50% {
+    scale: 1;
+  }
+  75% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  25% {
+    scale: 1.1;
+  }
+  50% {
+    scale: 1;
+  }
+  75% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.input {
+  height: 5rem;
 }
 
 .the_concern {

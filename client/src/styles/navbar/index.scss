@@ -5,29 +5,29 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem 0;
+    height: 7rem;
 }
 
 .navbar--items {
     .items--list {
         display: flex;
         gap: 1em;
-        transition: transform 1s ease-in-out;
+
+        // border: 1px solid black;
 
         .list--items {
-            transition: color 200ms ease-in;
+            transition: color 200ms ease-in, border 75ms ease-out;
 
-            // border: 1px solid black;
-            // border: 0.2rem dashed base.$color-primary;
-            // border-bottom: 1rem dashed base.$color-primary;
+            height: 5rem;
+            border-bottom: 2px hidden base.$color-primary;
 
-            padding: 1.2em 1em;
+            padding: 1.2rem 1rem;
         }
 
         .list--items:hover {
             cursor: pointer;
             color: base.$color-primary;
-            border-bottom: 0.2rem solid base.$color-primary;
+            border-bottom: 2px solid base.$color-primary;
         }
     }
 }

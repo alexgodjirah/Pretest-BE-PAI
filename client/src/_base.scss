@@ -39,19 +39,6 @@ $color-primary: #61ce70;
     // border: 1px solid blueviolet;
 }
 
-.button {
-    padding: 1em 0;
-    border-radius: 10em;
-    border: 0;
-
-    width: 10em;
-
-    font-size: $font-p;
-    color: white;
-
-    background-color: $color-primary;
-}
-
 .font--h1 {
     font-size: $font-h1;
     font-weight: $font-weight-1;
@@ -83,4 +70,55 @@ $color-primary: #61ce70;
     text-decoration: none;
     line-height: 1.5em;
     text-align: justify;
+}
+
+.button,
+.button-subs {
+    padding: 1em 0;
+    border-radius: 10em;
+    border: 0;
+
+    width: 10em;
+
+    font-size: $font-p;
+    color: white;
+
+    background-color: $color-primary;
+    cursor: pointer;
+}
+
+.button-subs:hover {
+    color: $color-primary;
+    background-color: white;
+    border: 1px solid $color-primary;
+}
+
+.button:hover {
+    color: $color-primary;
+    background-color: white;
+    border: 1px solid $color-primary;
+
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        scale: 1;
+    }
+    25% {
+        scale: 1.1;
+    }
+    50% {
+        scale: 1;
+    }
+    75% {
+        scale: 1.1;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+.input {
+    height: 5rem;
 }
