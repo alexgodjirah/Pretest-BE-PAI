@@ -22,7 +22,9 @@ export default function FourthPage() {
                         pesticides while still being effective and efficient in
                         controlling crop plant pests.
                     </p>
-                    <button className="button">Our Product</button>
+                    <div>
+                        <button className="button">Our Product</button>
+                    </div>
                 </section>
             </main>
         </>

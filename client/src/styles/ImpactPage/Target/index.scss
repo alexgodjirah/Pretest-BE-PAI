@@ -1,0 +1,48 @@
+@use "../../../base";
+
+.target {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6rem;
+
+    padding: 10rem 0;
+
+    .target--text {
+        text-align: center;
+    }
+
+    .target--cards {
+        display: grid;
+        grid-template-areas:
+            "a b"
+            "c d";
+
+        gap: 3rem;
+
+        .cards--container {
+            border-radius: 3rem;
+            box-shadow: 0.5rem 0.5rem 1rem rgb(170, 170, 170);
+
+            background-color: rgba(0, 0, 0, 0.1);
+
+            height: 40rem;
+
+            position: relative;
+
+            h2 {
+                width: 70%;
+
+                position: absolute;
+                top: 3rem;
+                left: 2rem;
+            }
+
+            button {
+                position: absolute;
+                bottom: 2.5rem;
+                left: 2.5rem;
+            }
+        }
+    }
+}

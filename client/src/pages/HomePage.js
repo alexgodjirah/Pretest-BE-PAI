@@ -11,7 +11,7 @@ import Navbar from "../components/Navbar";
 export default function HomePage() {
     return (
         <>
-            <div>
+            <body>
                 <header className="navbar--sticky">
                     <Navbar />
                 </header>
@@ -45,7 +45,7 @@ export default function HomePage() {
                 <footer id="footer">
                     <Footer />
                 </footer>
-            </div>
+            </body>
         </>
     );
 }

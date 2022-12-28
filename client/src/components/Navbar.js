@@ -48,7 +48,7 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li className="list--items">
-                            <a href="#" className="font--h3">
+                            <a href="/impact" className="font--h3">
                                 Impact
                             </a>
                         </li>

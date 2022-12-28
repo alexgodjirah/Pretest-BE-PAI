@@ -18,10 +18,11 @@
 
     .newsletter--input {
         display: flex;
+        align-items: center;
         gap: 1.5rem;
 
         input {
-            padding: 1rem 1rem;
+            padding: 1em 1em;
             width: 30em;
 
             border-radius: 1em;

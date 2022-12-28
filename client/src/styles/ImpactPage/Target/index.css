@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
+.navbar--sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: white;
+}
+
+.container {
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.container_2 {
+  width: 85%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.font--h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: #61ce70;
+}
+
+.font--h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #61ce70;
+}
+
+.font--h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.font--h4 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-decoration: none;
+  line-height: 1.5em;
+}
+
+.font--p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  line-height: 1.5em;
+}
+
+.button,
+.button-subs {
+  border-radius: 10em;
+  border: 0;
+  width: 10em;
+  height: 3em;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #61ce70;
+  cursor: pointer;
+}
+
+.button-subs:hover {
+  color: #61ce70;
+  background-color: transparent;
+  border: 1px solid #61ce70;
+}
+
+.button:hover {
+  color: #61ce70;
+  background-color: transparent;
+  border: 1px solid #61ce70;
+  -webkit-animation: pulse 1.5s infinite;
+          animation: pulse 1.5s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  25% {
+    scale: 1.1;
+  }
+  50% {
+    scale: 1;
+  }
+  75% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  25% {
+    scale: 1.1;
+  }
+  50% {
+    scale: 1;
+  }
+  75% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.input {
+  height: 3.5em;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #61ce70 !important;
+}
+
+.swiper-pagination-bullet-active {
+  color: #61ce70 !important;
+  background-color: #61ce70 !important;
+}
+
+.target {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 10rem 0;
+}
+.target .target--text {
+  text-align: center;
+}
+.target .target--cards {
+  display: grid;
+  grid-template-areas: "a b" "c d";
+  gap: 3rem;
+}
+.target .target--cards .cards--container {
+  border-radius: 3rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(170, 170, 170);
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 40rem;
+  position: relative;
+}
+.target .target--cards .cards--container h2 {
+  width: 70%;
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+}
+.target .target--cards .cards--container button {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+}/*# sourceMappingURL=index.css.map */

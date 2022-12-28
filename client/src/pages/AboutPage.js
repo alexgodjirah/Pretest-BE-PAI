@@ -10,7 +10,7 @@ import Navbar from "../components/Navbar";
 export default function ProductPage() {
     return (
         <>
-            <div>
+            <body>
                 <header className="navbar--sticky">
                     <Navbar />
                 </header>
@@ -39,7 +39,7 @@ export default function ProductPage() {
                 <footer>
                     <Footer />
                 </footer>
-            </div>
+            </body>
         </>
     );
 }
