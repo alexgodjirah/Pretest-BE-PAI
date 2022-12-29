@@ -142,7 +142,7 @@
   justify-content: space-between;
   align-items: center;
   height: 7rem;
-  transition: filter 300ms ease-in-out, transform 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .header .navbar--logo {
   height: 5rem;
@@ -161,11 +161,10 @@
 .navbar .navbar--items .items--list .list--items {
   transition: color 200ms ease-in, border 75ms ease-out;
   height: 5rem;
-  border-bottom: 2px hidden #61ce70;
   padding: 1.2rem 1rem;
+  cursor: pointer;
 }
 .navbar .navbar--items .items--list .list--items:hover {
-  cursor: pointer;
   color: #61ce70;
   border-bottom: 3px solid #61ce70;
 }
@@ -176,4 +175,9 @@
 
 .scroll-down header {
   transform: translate3d(0, -100%, 0);
+}
+
+.item--active {
+  color: #61ce70;
+  border-bottom: 3px solid #61ce70;
 }/*# sourceMappingURL=index.css.map */

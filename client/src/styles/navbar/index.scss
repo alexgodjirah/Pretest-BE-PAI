@@ -6,7 +6,7 @@
     align-items: center;
 
     height: 7rem;
-    transition: filter 300ms ease-in-out, transform 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 
     .navbar--logo {
         height: 5rem;
@@ -33,13 +33,12 @@
                 transition: color 200ms ease-in, border 75ms ease-out;
 
                 height: 5rem;
-                border-bottom: 2px hidden base.$color-primary;
 
                 padding: 1.2rem 1rem;
+                cursor: pointer;
             }
 
             .list--items:hover {
-                cursor: pointer;
                 color: base.$color-primary;
                 border-bottom: 3px solid base.$color-primary;
             }
@@ -57,4 +56,9 @@
     header {
         transform: translate3d(0, -100%, 0);
     }
+}
+
+.item--active {
+    color: base.$color-primary;
+    border-bottom: 3px solid base.$color-primary;
 }
