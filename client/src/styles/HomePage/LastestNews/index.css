@@ -163,6 +163,9 @@
   flex-direction: column;
   gap: 1.5rem;
 }
+.lastest_news .lastest_news--news .news--card .card--text p {
+  text-align: justify;
+}
 .lastest_news .lastest_news--news .news--card .card--text .card--readmore {
   margin-top: 2rem;
 }

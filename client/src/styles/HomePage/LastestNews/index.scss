@@ -44,6 +44,10 @@
                 flex-direction: column;
                 gap: 1.5rem;
 
+                p {
+                    text-align: justify;
+                }
+
                 .card--readmore {
                     margin-top: 2rem;
 
