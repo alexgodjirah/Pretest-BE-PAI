@@ -53,12 +53,21 @@
   line-height: 1.5em;
 }
 
-.button,
 .button-subs {
   border-radius: 10em;
   border: 0;
   width: 10em;
   height: 3em;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #61ce70;
+  cursor: pointer;
+}
+
+.button {
+  padding: 1em 3em;
+  border-radius: 10em;
+  border: 0;
   font-size: 1.5rem;
   color: white;
   background-color: #61ce70;

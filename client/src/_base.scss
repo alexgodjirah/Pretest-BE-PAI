@@ -72,14 +72,27 @@ $color-primary: #61ce70;
     line-height: 1.5em;
 }
 
-.button,
 .button-subs {
-    // padding: 1em 2.5em;
     border-radius: 10em;
     border: 0;
 
     width: 10em;
     height: 3em;
+
+    font-size: $font-p;
+    color: white;
+
+    background-color: $color-primary;
+    cursor: pointer;
+}
+.button {
+    padding: 1em 3em;
+
+    border-radius: 10em;
+    border: 0;
+
+    // width: 15em;
+    // height: 3em;
 
     font-size: $font-p;
     color: white;
