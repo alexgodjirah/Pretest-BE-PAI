@@ -11,7 +11,7 @@ import ToWorld from "../components/ImpactPage/ToWorld";
 export default function ImpactPage() {
     return (
         <>
-            <body>
+            <div>
                 <header className="navbar--sticky">
                     <Navbar />
                 </header>
@@ -45,7 +45,7 @@ export default function ImpactPage() {
                 <footer id="footer">
                     <Footer />
                 </footer>
-            </body>
+            </div>
         </>
     );
 }
