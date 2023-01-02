@@ -1,0 +1,71 @@
+@use "../../../base";
+
+.listen_learn {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 6rem;
+
+    padding: 10rem 0;
+
+    .listen_learn--text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .line {
+            width: 7%;
+            height: 0.5em;
+            border: 1px solid base.$color-primary;
+            border-radius: 10em;
+            background-color: base.$color-primary;
+            margin: 0 auto;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 60%;
+        }
+    }
+
+    .listen_learn--images {
+        display: grid;
+        grid-template-areas:
+            "a b c"
+            "d e f";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 25rem);
+        gap: 1rem;
+
+        .images--container {
+            border-radius: 2rem;
+            height: 25rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: all 1000ms ease-in-out;
+        }
+
+        .images--container:hover {
+            h2 {
+                display: none;
+            }
+
+            .hover--content {
+                width: 80%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                text-align: justify;
+
+                gap: 1rem;
+            }
+        }
+    }
+}

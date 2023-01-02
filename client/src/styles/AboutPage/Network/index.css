@@ -137,6 +137,10 @@
   background-color: #61ce70 !important;
 }
 
+.hide {
+  display: none;
+}
+
 .network {
   text-align: center;
   padding: 10rem 0;

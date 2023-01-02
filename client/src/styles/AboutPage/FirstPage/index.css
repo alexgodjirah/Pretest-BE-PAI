@@ -137,7 +137,11 @@
   background-color: #61ce70 !important;
 }
 
-.first_page {
+.hide {
+  display: none;
+}
+
+.about--first_page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,17 +150,17 @@
   min-height: 95vh;
   background-color: #61ce70;
 }
-.first_page .first_page--title_container {
+.about--first_page .first_page--title_container {
   position: absolute;
   right: 10%;
   width: 60%;
   max-width: 1000px;
 }
-.first_page .first_page--title_container .first_page--title {
+.about--first_page .first_page--title_container .first_page--title {
   margin-left: auto;
   text-align: end;
   width: 70%;
 }
-.first_page .first_page--title_container .first_page--title h2 {
+.about--first_page .first_page--title_container .first_page--title h2 {
   color: black;
 }/*# sourceMappingURL=index.css.map */

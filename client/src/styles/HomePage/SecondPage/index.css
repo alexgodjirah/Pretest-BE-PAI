@@ -137,6 +137,10 @@
   background-color: #61ce70 !important;
 }
 
+.hide {
+  display: none;
+}
+
 .second_page {
   display: flex;
   padding-top: 40em;

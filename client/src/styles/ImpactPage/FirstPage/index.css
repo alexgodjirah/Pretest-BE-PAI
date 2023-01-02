@@ -137,7 +137,11 @@
   background-color: #61ce70 !important;
 }
 
-.first_page {
+.hide {
+  display: none;
+}
+
+.impact--first_page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,17 +150,17 @@
   min-height: 95vh;
   background-color: #61ce70;
 }
-.first_page .first_page--title_container {
+.impact--first_page .first_page--title_container {
   position: absolute;
   left: 10%;
   width: 60%;
   max-width: 1000px;
 }
-.first_page .first_page--title_container .first_page--title {
+.impact--first_page .first_page--title_container .first_page--title {
   margin-right: auto;
   text-align: start;
   width: 70%;
 }
-.first_page .first_page--title_container .first_page--title h2 {
+.impact--first_page .first_page--title_container .first_page--title h2 {
   color: black;
 }/*# sourceMappingURL=index.css.map */
