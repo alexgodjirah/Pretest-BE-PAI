@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import "../styles/Navbar/index.css";
 
@@ -54,16 +54,21 @@ export default function Navbar() {
         },
         {
             id: 4,
+            link: "/sectors",
+            title: "Sectors",
+        },
+        {
+            id: 6,
             link: "/blog",
             title: "Blog",
         },
         {
-            id: 5,
+            id: 6,
             link: "/career",
             title: "Career",
         },
         {
-            id: 6,
+            id: 7,
             link: "/contact",
             title: "Contact",
         },
@@ -72,7 +77,9 @@ export default function Navbar() {
     return (
         <header className="header container">
             <div className="navbar--logo">
-                <h3 className="font--h3">Logo</h3>
+                <Link to="/" className="font--h3">
+                    Logo
+                </Link>
             </div>
             <nav className="navbar">
                 <div className="navbar--items">
