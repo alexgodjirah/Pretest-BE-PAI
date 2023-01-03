@@ -137,6 +137,10 @@
   background-color: #61ce70 !important;
 }
 
+.hide {
+  display: none;
+}
+
 .target {
   display: flex;
   flex-direction: column;

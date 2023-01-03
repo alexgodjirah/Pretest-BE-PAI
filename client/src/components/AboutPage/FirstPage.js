@@ -5,7 +5,7 @@ export default function FirstPage() {
     return (
         <>
             {/* <div className="background"></div> */}
-            <main className="first_page">
+            <main className="about--first_page">
                 <div className="first_page--title_container">
                     <div className="first_page--title">
                         <h2 className="font--h2">

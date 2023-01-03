@@ -4,7 +4,7 @@ import "../../styles/ImpactPage/FirstPage/index.css";
 export default function FirstPage() {
     return (
         <>
-            <main className="first_page">
+            <main className="impact--first_page">
                 <div className="first_page--title_container">
                     <div className="first_page--title">
                         <h2 className="font--h2">

@@ -58,7 +58,7 @@ export default function Navbar() {
             title: "Sectors",
         },
         {
-            id: 6,
+            id: 5,
             link: "/blog",
             title: "Blog",
         },

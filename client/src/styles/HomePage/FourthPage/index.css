@@ -137,6 +137,10 @@
   background-color: #61ce70 !important;
 }
 
+.hide {
+  display: none;
+}
+
 .fourth_page {
   display: flex;
   flex-direction: row-reverse;
