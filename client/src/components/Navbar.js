@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
+
 import "../styles/Navbar/index.css";
 
 export default function Navbar() {
@@ -34,57 +36,83 @@ export default function Navbar() {
         });
     });
 
+    const navbarItems = [
+        {
+            id: 1,
+            link: "/about",
+            title: "About Us",
+        },
+        {
+            id: 2,
+            link: "/impact",
+            title: "Impact",
+        },
+        {
+            id: 3,
+            link: "/products",
+            title: "Products",
+        },
+        {
+            id: 4,
+            link: "/sectors",
+            title: "Sectors",
+        },
+        {
+            id: 6,
+            link: "/blog",
+            title: "Blog",
+        },
+        {
+            id: 6,
+            link: "/career",
+            title: "Career",
+        },
+        {
+            id: 7,
+            link: "/contact",
+            title: "Contact",
+        },
+    ];
+
     return (
         <header className="header container">
             <div className="navbar--logo">
-                <h3 className="font--h3">Logo</h3>
+                <Link to="/" className="font--h3">
+                    Logo
+                </Link>
             </div>
             <nav className="navbar">
                 <div className="navbar--items">
                     <ul className="items--list">
-                        <li className="list--items">
-                            <a href="/about" className="font--h3">
-                                About Us
-                            </a>
-                        </li>
-                        <li className="list--items">
-                            <a href="#" className="font--h3">
-                                Impact
-                            </a>
-                        </li>
-                        <li className="list--items">
-                            <a href="#" className="font--h3">
-                                Products
-                            </a>
-                        </li>
-                        <li className="list--items">
-                            <a href="#" className="font--h3">
-                                Sectors
-                            </a>
-                        </li>
-                        <li className="list--items">
-                            <a href="#" className="font--h3">
-                                Blog
-                            </a>
-                        </li>
-                        <li className="list--items">
-                            <a href="#" className="font--h3">
-                                Career
-                            </a>
-                        </li>
-                        <li className="list--items">
-                            <a href="#" className="font--h3">
-                                Contact
-                            </a>
-                        </li>
-                        <li className="list--items">
-                            <a href="#" className="font--h3">
-                                Language
-                            </a>
-                        </li>
+                        {navbarItems.map((item) => (
+                            <CustomLink key={item.id} to={item.link}>
+                                {item.title}
+                            </CustomLink>
+                        ))}
                     </ul>
                 </div>
             </nav>
         </header>
     );
 }
+
+const CustomLink = ({ to, children, ...props }) => {
+    // const resolvedPath = useResolvedPath(to);
+    // const isActive = useMatch({ path: resolvedPath.pathname });
+
+    return (
+        <li>
+            <NavLink
+                to={to}
+                {...props}
+                className={({ isActive }) =>
+                    isActive
+                        ? "font--h3 list--items item--active"
+                        : "font--h3 list--items"
+                }
+            >
+                {children}
+            </NavLink>
+        </li>
+    );
+};

@@ -1,0 +1,32 @@
+.excellence {
+  display: flex;
+  flex-direction: column;
+  padding: 15rem 0;
+  gap: 6rem;
+}
+.excellence .excellence--title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.excellence .excellence--cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.excellence .excellence--cards .cards--container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 30%;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(170, 170, 170);
+  text-align: center;
+  padding: 3rem 0;
+}
+.excellence .excellence--cards .cards--container .container--image {
+  width: 90%;
+  height: 225px;
+  border: 1px solid black;
+  margin: 0 auto;
+}/*# sourceMappingURL=index.css.map */

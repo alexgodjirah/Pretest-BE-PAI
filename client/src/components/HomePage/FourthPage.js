@@ -8,7 +8,7 @@ export default function FourthPage() {
                 <div className="fourth_page--image"></div>
                 <section className="fourth_page--text">
                     <h2 className="font--h2">
-                        The Solut-ion "Pesticides Reductant"t
+                        The Solut-ion "Pesticides Reductant"
                     </h2>
                     <p className="font--p">
                         By the year 2020, the global pesticide usage has been
@@ -22,7 +22,9 @@ export default function FourthPage() {
                         pesticides while still being effective and efficient in
                         controlling crop plant pests.
                     </p>
-                    <button className="button">Our Product</button>
+                    <div>
+                        <button className="button">Our Product</button>
+                    </div>
                 </section>
             </main>
         </>

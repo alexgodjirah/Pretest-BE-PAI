@@ -22,7 +22,9 @@ export default function SecondPage() {
                         pesticides while still being effective and efficient in
                         controlling crop plant pests.
                     </p>
-                    <button className="button">Learn more</button>
+                    <div>
+                        <button className="button">Learn more</button>
+                    </div>
                 </section>
             </main>
         </>
