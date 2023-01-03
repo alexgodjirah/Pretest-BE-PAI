@@ -1,0 +1,38 @@
+@use "../../../base";
+
+.news_article {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10rem 0;
+
+    gap: 5rem;
+
+    .news_article--title {
+        display: flex;
+        flex-direction: column;
+
+        gap: 1.5rem;
+    }
+
+    .news_article--carousel {
+        .news_article_swiper {
+            height: 50rem;
+            border: 1px solid black;
+            border-radius: 2rem;
+
+            .news_article_swiper_item {
+                position: relative;
+                .item_text {
+                    position: absolute;
+                    bottom: 5rem;
+                    left: 5rem;
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
+            }
+        }
+    }
+}

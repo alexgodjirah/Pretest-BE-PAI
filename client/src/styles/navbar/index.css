@@ -141,6 +141,14 @@
   display: none;
 }
 
+.line {
+  width: 10%;
+  height: 0.5em;
+  border: 1px solid #61ce70;
+  border-radius: 10em;
+  background-color: #61ce70;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -164,7 +172,6 @@
 }
 .navbar .navbar--items .items--list .list--items {
   transition: color 200ms ease-in, border 75ms ease-out;
-  height: 5rem;
   padding: 1.2rem 1rem;
   cursor: pointer;
 }

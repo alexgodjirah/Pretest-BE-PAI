@@ -141,6 +141,14 @@
   display: none;
 }
 
+.line {
+  width: 10%;
+  height: 0.5em;
+  border: 1px solid #61ce70;
+  border-radius: 10em;
+  background-color: #61ce70;
+}
+
 .testimony {
   display: flex;
   flex-direction: column;

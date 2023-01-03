@@ -150,3 +150,12 @@ $color-primary: #61ce70;
 .hide {
     display: none;
 }
+
+.line {
+    width: 10%;
+    height: 0.5em;
+    border: 1px solid $color-primary;
+    border-radius: 10em;
+    background-color: $color-primary;
+    // margin: 0 auto;
+}

@@ -1,0 +1,81 @@
+@use "../../../base";
+
+.articles {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5rem;
+
+    padding: 10rem 0;
+
+    .articles--title {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .articles--list {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+
+        padding: 0 0 8rem 0;
+
+        .list--item {
+            display: grid;
+            grid-template-areas:
+                "a b"
+                "c d";
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            gap: 4rem;
+
+            .item--card {
+                display: flex;
+                flex-direction: column;
+
+                gap: 2rem;
+
+                .card--image {
+                    border-radius: 2rem;
+
+                    width: 100%;
+                    height: 30rem;
+                }
+
+                .card--title {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+
+                    width: 97%;
+
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .list--button {
+            position: absolute;
+            bottom: 0;
+            right: 3rem;
+
+            .anchor--button {
+                font-size: base.$font-h4;
+                color: base.$color-primary;
+                border: 0;
+                background-color: transparent;
+
+                padding: 1.5rem 3rem;
+            }
+
+            .anchor--button:hover {
+                background-color: base.$color-primary;
+                color: white;
+                border-radius: 2rem;
+            }
+        }
+    }
+}
