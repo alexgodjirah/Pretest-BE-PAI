@@ -190,4 +190,8 @@
   align-items: center;
   text-align: justify;
   gap: 1rem;
+}
+.listen_learn .listen_learn--images .images--container:hover .hover--content h3,
+.listen_learn .listen_learn--images .images--container:hover .hover--content p {
+  color: white;
 }/*# sourceMappingURL=index.css.map */
