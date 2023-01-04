@@ -6,6 +6,7 @@ const AboutPage = React.lazy(() => import("../pages/AboutPage"));
 const ImpactPage = React.lazy(() => import("../pages/ImpactPage"));
 const SectorsPage = React.lazy(() => import("../pages/SectorsPage"));
 const BlogPage = React.lazy(() => import("../pages/BlogPage"));
+const CareerPage = React.lazy(() => import("../pages/CareerPage"));
 
 const routes = [
     { path: "/", element: <HomePage /> },
@@ -13,6 +14,7 @@ const routes = [
     { path: "/impact", element: <ImpactPage /> },
     { path: "/sectors", element: <SectorsPage /> },
     { path: "/blog", element: <BlogPage /> },
+    { path: "/career", element: <CareerPage /> },
 ];
 
 export default routes;

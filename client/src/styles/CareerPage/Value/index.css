@@ -188,75 +188,52 @@
   background-color: #2db03e;
 }
 
-.newsletter {
-  width: 60%;
-  height: 20rem;
-  padding: 5rem 0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-  border-radius: 2.5em;
-  gap: 3em;
-}
-.newsletter .newsletter--input {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.newsletter .newsletter--input input {
-  padding: 1em 1em;
-  width: 30em;
-  border-radius: 1em;
-  border: 1px solid black;
-}
-
-.footer {
+.value {
   display: flex;
   flex-direction: column;
   padding: 10rem 0;
-  position: relative;
+  gap: 5rem;
 }
-.footer .footer--columns {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr 1fr 1fr 1fr;
-  gap: 2rem;
-  width: 90%;
+.value .value--title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.value .value--carousel .value-swiper {
+  width: 100%;
+  height: 45rem;
+}
+.value .value--carousel .value-swiper .carousel--item {
+  display: flex;
+  align-items: center;
+}
+.value .value--carousel .value-swiper .carousel--item .item--container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
   margin: 0 auto;
 }
-.footer .footer--columns .footer--container {
+.value .value--carousel .value-swiper .carousel--item .container--text {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+}
+.value .value--carousel .value-swiper .carousel--item .container--text .text--title {
+  display: flex;
+  align-items: center;
   gap: 1.5rem;
+  width: 90%;
 }
-.footer .footer--columns .footer--container h3 {
-  font-size: 2rem;
+.value .value--carousel .value-swiper .carousel--item .container--text .text--title .title--icon {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background-color: #61ce70;
 }
-.footer .footer--columns .footer--container .footer--items_list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  flex-shrink: 0;
-}
-.footer .footer--columns .footer--container .footer--items_list .items_list--content {
-  display: flex;
-  gap: 1.5em;
-}
-.footer .footer--columns .footer--container .footer--items_list .footer--icon {
-  width: 2rem;
-  height: 2rem;
-  flex-shrink: 0;
-  border: 1px solid pink;
-}
-.footer .footer--footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  border-top: 1px solid black;
-  padding: 1.5em 0;
-}
-.footer .footer--footer p {
-  font-size: 1.2rem;
+.value .value--carousel .value-swiper .carousel--item .container--image img {
+  width: 35rem;
+  height: auto;
+  border-radius: 3rem;
 }/*# sourceMappingURL=index.css.map */

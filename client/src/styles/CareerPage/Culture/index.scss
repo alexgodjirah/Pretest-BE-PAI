@@ -1,0 +1,59 @@
+@use "../../../base";
+
+.culture {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10rem 0;
+
+    gap: 5rem;
+
+    .culture--title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 1rem;
+    }
+
+    .culture--carousel {
+        .culture--swiper {
+            width: 100%;
+            height: 55rem;
+
+            // border: 1px solid black;
+
+            .swiper--carousel {
+                // border: 1px solid black;
+
+                .carousel--item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: end;
+
+                    position: relative;
+
+                    border-radius: 3rem;
+
+                    height: 90%;
+
+                    .item--text {
+                        width: 80%;
+                        height: 20%;
+
+                        position: absolute;
+                        bottom: 10%;
+
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+
+                        text-align: center;
+                        // justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

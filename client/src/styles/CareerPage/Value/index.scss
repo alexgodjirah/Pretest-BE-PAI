@@ -1,0 +1,80 @@
+@use "../../../base";
+
+.value {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10rem 0;
+
+    gap: 5rem;
+
+    .value--title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 1rem;
+    }
+
+    .value--carousel {
+        .value-swiper {
+            width: 100%;
+            height: 45rem;
+
+            // border: 1px solid black;
+
+            .carousel--item {
+                display: flex;
+                align-items: center;
+
+                .item--container {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 95%;
+
+                    margin: 0 auto;
+
+                    // border: 1px solid black;
+                }
+
+                .container--text {
+                    display: flex;
+                    flex-direction: column;
+
+                    justify-content: space-evenly;
+
+                    width: 60%;
+
+                    // border: 1px solid black;
+
+                    .text--title {
+                        display: flex;
+                        align-items: center;
+                        gap: 1.5rem;
+
+                        width: 90%;
+
+                        .title--icon {
+                            height: 8rem;
+                            width: 8rem;
+
+                            // border: 1px solid black;
+                            border-radius: 50%;
+
+                            background-color: base.$color-primary;
+                        }
+                    }
+                }
+
+                .container--image {
+                    img {
+                        width: 35rem;
+                        height: auto;
+
+                        border-radius: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
