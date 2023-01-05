@@ -1,0 +1,47 @@
+@use "../../../base";
+
+.recruitment {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    padding: 10rem 0;
+
+    position: relative;
+
+    // border: 1px solid black;
+
+    .recruitment--title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .recruitment--cards {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+
+        .cards--container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            text-align: center;
+
+            // border: 1px solid black;
+
+            .cards--image {
+                width: 70%;
+            }
+        }
+    }
+
+    .recruitment--note {
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+    }
+}

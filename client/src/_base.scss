@@ -116,6 +116,10 @@ $color-primary-darker: #2db03e;
     animation: pulse 1.5s infinite;
 }
 
+.animation-pulse:hover {
+    animation: pulse 2s infinite;
+}
+
 @keyframes pulse {
     0% {
         scale: 1;

@@ -88,6 +88,11 @@
           animation: pulse 1.5s infinite;
 }
 
+.animation-pulse:hover {
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
 @-webkit-keyframes pulse {
   0% {
     scale: 1;

@@ -88,6 +88,11 @@
           animation: pulse 1.5s infinite;
 }
 
+.animation-pulse:hover {
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
 @-webkit-keyframes pulse {
   0% {
     scale: 1;
@@ -192,7 +197,7 @@
   display: flex;
   flex-direction: column;
   padding: 10rem 0;
-  gap: 5rem;
+  gap: 3rem;
 }
 .value .value--title {
   display: flex;
@@ -202,7 +207,7 @@
 }
 .value .value--carousel .value-swiper {
   width: 100%;
-  height: 45rem;
+  height: 30rem;
 }
 .value .value--carousel .value-swiper .carousel--item {
   display: flex;

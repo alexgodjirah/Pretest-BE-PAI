@@ -1,0 +1,43 @@
+@use "../../../base";
+
+.perks {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    padding: 10rem 0;
+
+    .perks--title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        text-align: center;
+
+        h4 {
+            width: 90%;
+        }
+    }
+
+    .perks--cards {
+        display: flex;
+
+        .cards--container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            .cards--image {
+                border: 1px solid black;
+                width: 50%;
+
+                .image--icon {
+                    width: 50%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
