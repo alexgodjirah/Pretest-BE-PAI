@@ -1,0 +1,112 @@
+@use "../../../base";
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5rem;
+
+    border: 1px solid black;
+
+    padding: 1rem 0 10rem 0;
+
+    .contact_form--title {
+        text-align: center;
+    }
+
+    .contact_form--details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // border: 1px solid black;
+
+        .details--info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            width: 55%;
+
+            h2 {
+                width: 85%;
+            }
+
+            // border: 1px solid black;
+
+            .info--company_data {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                width: 90%;
+
+                // border: 1px solid black;
+
+                .company_data--container {
+                    display: flex;
+                    align-items: center;
+
+                    gap: 1rem;
+
+                    .company_data--icon {
+                        width: 5rem;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .info--socials {
+                display: flex;
+                justify-content: space-between;
+
+                width: 80%;
+
+                .socials--container {
+                    display: flex;
+
+                    .socials--icon {
+                        width: 5rem;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .details--form {
+            width: 40%;
+
+            .form--fields {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                .fields--input,
+                .fields--textarea {
+                    padding: 1rem 1rem;
+                    font-size: base.$font-p;
+                    font-weight: base.$font-weight-4;
+                }
+
+                .fields--input::placeholder,
+                .fields--textarea::placeholder {
+                    font-size: base.$font-p;
+                    font-weight: base.$font-weight-3;
+                }
+                .fields--input:focus,
+                .fields--textarea:focus {
+                    outline: 0;
+                    font-weight: base.$font-weight-3;
+                }
+
+                .fields--textarea {
+                    min-height: 15rem;
+                }
+
+                textarea {
+                    resize: vertical;
+                }
+            }
+        }
+    }
+}
