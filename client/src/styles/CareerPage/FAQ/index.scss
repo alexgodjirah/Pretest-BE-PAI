@@ -1,0 +1,68 @@
+@use "../../../base";
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    padding: 10rem 0;
+
+    .faq--title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .faq--accordion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3rem;
+
+        height: 30rem;
+
+        cursor: pointer;
+
+        .accordion--container {
+            display: flex;
+            flex-direction: column;
+
+            height: 90%;
+
+            .accordion--question {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                width: 95%;
+
+                .accordion-icon {
+                    font-size: 4rem;
+                    transition: all 500 ease-in-out;
+                    transform: rotate(90deg);
+                }
+
+                .rotate-90 {
+                    transform: rotate(180deg);
+                    // animation: north-to-south 500ms;
+                    transition: all 500 ease-in-out;
+                }
+            }
+
+            .accordion--answer {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@keyframes north-to-south {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
